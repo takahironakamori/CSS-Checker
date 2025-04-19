@@ -2,11 +2,12 @@
 
 .theme--light {
 
-  // staticColor
+  // static color
   --color--none : #{color.$color--none};
   --color--white : #{color.$color--white};
   --color--black : #{color.$color--black};
 
+  // static color
   --color--gray-050: #{color.$color--gray-050};
   --color--gray-075: #{color.$color--gray-075};
   --color--gray-100: #{color.$color--gray-100};
@@ -326,348 +327,404 @@
   --none : var(--color--none);
 
   // color
+
+  // 通常のテキスト
   --color--default : var(--color--gray-900);
+  
+  // 注釈や補足（通常より薄め） のテキスト
+  --color--default--note : var(--color--disabled-500);
+  
+  // disabled のテキスト
+  --color--default--disabled : var(--color--disabled-300);
+
   --color--primary : var(--color--blue-900);
+  --color--primary--hover : var(--color--blue-1000);
+  --color--primary--active : var(--color--blue-1100);
+  --color--primary--selected : var(--color--blue-1200);
+  
   --color--secondary : var(--color--celery-900);
+  --color--secondary--hover : var(--color--celery-1000);
+  --color--secondary--active : var(--color--celery-1100);
+  --color--secondary--selected : var(--color--celery-1200);
+  
   --color--info : var(--color--info-900);
+  --color--info--hover : var(--color--info-1000);
+  --color--info--active : var(--color--info-1100);
+  --color--info--selected : var(--color--info-1200);
+
   --color--positive : var(--color--positive-900);
+  --color--positive--hover : var(--color--positive-1000);
+  --color--positive--active : var(--color--positive-1100);
+  --color--positive--selected : var(--color--positive-1200);
+
   --color--notice : var(--color--notice-900);
+  --color--notice--hover : var(--color--notice-1000);
+  --color--notice--active : var(--color--notice-1100);
+  --color--notice--selected : var(--color--notice-1200);
+
   --color--negative : var(--color--negative-900);
+  --color--negative--hover : var(--color--negative-1000);
+  --color--negative--active : var(--color--negative-1100);
+  --color--negative--selected : var(--color--negative-1200);
+
   --color--accent : var(--color--accent-900);
-  --color--disabled : var(--color--disabled-900);
+  --color--accent--hover : var(--color--accent-1000);
+  --color--accent--active : var(--color--accent-1100);
+  --color--accent--selected : var(--color--accent-1200);
 
-  --hover--color--default : var(--color--gray-800);
-  --hover--color--primary : var(--color--blue-1000);
-  --hover--color--secondary : var(--color--celery-1000);
-  --hover--color--info : var(--color--info-1000);
-  --hover--color--positive : var(--color--positive-1000);
-  --hover--color--notice : var(--color--notice-1000);
-  --hover--color--negative : var(--color--negative-1000);
-  --hover--color--accent : var(--color--accent-1000);
-
-  --active--color--default : var(--color--gray-900);
-  --active--color--primary : var(--color--blue-1100);
-  --active--color--secondary : var(--color--celery-1100);
-  --active--color--info : var(--color--info-1100);
-  --active--color--positive : var(--color--positive-1100);
-  --active--color--notice : var(--color--notice-1100);
-  --active--color--negative : var(--color--negative-1100);
-  --active--color--accent : var(--color--accent-1100);
-
-  --selected--color--default : var(--color--gray-900);
-  --selected--color--primary : var(--color--blue-1200);
-  --selected--color--secondary : var(--color--celery-1200);
-  --selected--color--info : var(--color--info-1200);
-  --selected--color--positive : var(--color--positive-1200);
-  --selected--color--notice : var(--color--notice-1200);
-  --selected--color--negative : var(--color--negative-1200);
-  --selected--color--accent : var(--color--accent-1200);
 
   // background
   --background-color--default : var(--color--default);
+  --background-color--default--hover : var(--color--default--hover);
+  --background-color--default--active : var(--color--default--active);
+  --backgorund-color--default--selected : var(--color--default--selected);
+
   --background-color--primary : var(--color--primary);
+  --background-color--primary--hover : var(--color--primary--hover);
+  --background-color--primary--active : var(--color--primary--active);
+  --background-color--primary--selected : var(--color--primary--selected);
+  
   --background-color--secondary : var(--color--secondary);
+  --background-color--secondary--hover : var(--color--secondary--hover);
+  --background-color--secondary--active : var(--color--secondary--active);
+  --background-color--secondary--selected : var(--color--secondary--selected);
+  
   --background-color--info : var(--color--info);
+  --background-color--info--hover : var(--color--info--hover);
+  --background-color--info--active : var(--color--info--active);
+  --background-color--info--selected : var(--color--info--selected);
+  
   --background-color--positive : var(--color--positive);
+  --background-color--positive--hover : var(--color--positive--hover);
+  --background-color--positive--active : var(--color--positive--active);
+  --background-color--positive--selected : var(--color--positive--selected);
+  
   --background-color--notice : var(--color--notice);
+  --background-color--notice--hover : var(--color--notice--hover);
+  --background-color--notice--active : var(--color--notice--active);
+  --background-color--notice--selected : var(--color--notice--selected);
+  
   --background-color--negative : var(--color--negative);
+  --background-color--negative--hover : var(--color--negative--hover);
+  --background-color--negative--active : var(--color--negative--active);
+  --background-color--negative--selected : var(--color--negative--selected);
+  
   --background-color--accent : var(--color--accent);
+  --background-color--accent--hover : var(--color--accent--hover);
+  --background-color--accent--active : var(--color--accent--active);
+  --background-color--accent--selected : var(--color--accent--selected);
+  
   --background-color--disabled : var(--color--disabled);
 
-  --hover--background-color--default : var(--hover--color--default);
-  --hover--background-color--primary : var(--hover--color--primary);
-  --hover--background-color--secondary : var(--hover--color--secondary);
-  --hover--background-color--info : var(--hover--color--info);
-  --hover--background-color--positive : var(--hover--color--positive);
-  --hover--background-color--notice : var(--hover--color--notice);
-  --hover--background-color--negative : var(--hover--color--negative);
-  --hover--background-color--accent : var(--hover--color--accent);
-
-  --active--background-color--default : var(--active--color--default);
-  --active--background-color--primary : var(--active--color--primary);
-  --active--background-color--secondary : var(--active--color--secondary);
-  --active--background-color--info : var(--active--color--info);
-  --active--background-color--positive : var(--active--color--positive);
-  --active--background-color--notice : var(--active--color--notice);
-  --active--background-color--negative : var(--active--color--negative);
-  --active--background-color--accent : var(--active--color--accent);
-
-  --selected--backgorund-color--default : var(--selected--color--default);
-  --selected--background-color--primary : var(--selected--color--primary);
-  --selected--background-color--secondary : var(--selected--color--secondary);
-  --selected--background-color--info : var(--selected--color--info);
-  --selected--background-color--positive : var(--selected--color--positive);
-  --selected--background-color--notice : var(--selected--color--notice);
-  --selected--background-color--negative : var(--selected--color--negative);
-  --selected--background-color--accent : var(--selected--color--accent);
 
   // border
   --border-color--default : var(--color--default);
+  --border-color--default--hover : var(--color--default--hover);
+  --border-color--default--active : var(--color--default--active);
+  --border-color--default--selected : var(--color--default--selected);
+
   --border-color--primary : var(--color--primary);
+  --border-color--primary--hover : var(--color--primary--hover);
+  --border-color--primary--active : var(--color--primary--active);
+  --border-color--primary--selected : var(--color--primary--selected);
+  
   --border-color--secondary : var(--color--secondary);
+  --border-color--secondary--hover : var(--color--secondary--hover);
+  --border-color--secondary--active : var(--color--secondary--active);
+  --border-color--secondary--selected : var(--color--secondary--selected);
+  
   --border-color--info : var(--color--info);
+  --border-color--info--hover : var(--color--info--hover);
+  --border-color--info--active : var(--color--info--active);
+  --border-color--info--selected : var(--color--info--selected);
+  
   --border-color--positive : var(--color--positive);
+  --border-color--positive--hover : var(--color--positive--hover);
+  --border-color--positive--active : var(--color--positive--active);
+  --border-color--positive--selected : var(--color--positive--selected);
+  
   --border-color--notice : var(--color--notice);
+  --border-color--notice--hover : var(--color--notice--hover);
+  --border-color--notice--active : var(--color--notice--active);
+  --border-color--notice--selected : var(--color--notice--selected);
+  
   --border-color--negative : var(--color--negative);
+  --border-color--negative--hover : var(--color--negative--hover);
+  --border-color--negative--active : var(--color--negative--active);
+  --border-color--negative--selected : var(--color--negative--selected);
+  
   --border-color--accent : var(--color--accent);
+  --border-color--accent--hover : var(--color--accent--hover);
+  --border-color--accent--active : var(--color--accent--active);
+  --border-color--accent--selected : var(--color--accent--selected);
+  
   --border-color--disabled : var(--color--disabled);
-  --border-color--none : var(--color--none);
-
-  --hover--border-color--default : var(--hover--color--default);
-  --hover--border-color--primary : var(--hover--color--primary);
-  --hover--border-color--secondary : var(--hover--color--secondary);
-  --hover--border-color--info : var(--hover--color--info);
-  --hover--border-color--positive : var(--hover--color--positive);
-  --hover--border-color--notice : var(--hover--color--notice);
-  --hover--border-color--negative : var(--hover--color--negative);
-  --hover--border-color--accent : var(--hover--color--accent);
-
-  --active--border-color--default : var(--active--color--default);
-  --active--border-color--primary : var(--active--color--primary);
-  --active--border-color--secondary : var(--active--color--secondary);
-  --active--border-color--info : var(--active--color--info);
-  --active--border-color--positive : var(--active--color--positive);
-  --active--border-color--notice : var(--active--color--notice);
-  --active--border-color--negative : var(--active--color--negative);
-  --active--border-color--accent : var(--active--color--accent);
-
-  --selected--border-color--default : var(--selected--color--default);
-  --selected--border-color--primary : var(--selected--color--primary);
-  --selected--border-color--secondary : var(--selected--color--secondary);
-  --selected--border-color--info : var(--selected--color--info);
-  --selected--border-color--positive : var(--selected--color--positive);
-  --selected--border-color--notice : var(--selected--color--notice);
-  --selected--border-color--negative : var(--selected--color--negative);
-  --selected--border-color--accent : var(--selected--color--accent);
-
 
 
   // background
   --background--base--background-color: var(--color--gray-050);
   --background--layer-01--background-color: var(--color--gray-100);
-  --background--layer-02--background-color: var(--color--gray-100);
-
+  --background--layer-02--background-color: var(--color--gray-200);
+  
 
   // button
   --button--color--default: var(--white);
+  --button--color--default--hover: var(--white);
+  --button--color--default--active: var(--white);
+
   --button--color--primary: var(--white);
+  --button--color--primary--hover: var(--white);
+  --button--color--primary--active: var(--white);
+  
   --button--color--secondary: var(--white);
+  --button--color--secondary--hover: var(--white);
+  --button--color--secondary--active: var(--white);
+  
   --button--color--info: var(--white);
+  --button--color--info--hover: var(--white);
+  --button--color--info--active: var(--white);
+  
   --button--color--positive: var(--white);
+  --button--color--positive--hover: var(--white);
+  --button--color--positive--active: var(--white);
+  
   --button--color--notice: var(--white);
+  --button--color--notice--hover: var(--white);
+  --button--color--notice--active: var(--white);
+  
   --button--color--negative: var(--white);
+  --button--color--negative--hover: var(--white);
+  --button--color--negative--active: var(--white);
+  
   --button--color--accent: var(--white);
+  --button--color--accent--hover: var(--white);
+  --button--color--accent--active: var(--white);
+  
   --button--color--disabled: var(--white);
+  
   --button--color--none: var(--white);
 
+
   --button--background-color--default: var(--background-color--default);
+  --button--background-color--default--hover: var(--background-color--default--hover);
+  --button--background-color--default--active: var(--background-color--default--active);
+  
   --button--background-color--primary: var(--background-color--primary);
+  --button--background-color--primary--hover: var(--background-color--primary--hover);
+  --button--background-color--primary--active: var(--background-color--primary--active);
+  
   --button--background-color--secondary: var(--background-color--secondary);
+  --button--background-color--secondary--hover: var(--background-color--secondary--hover);
+  --button--background-color--secondary--active: var(--background-color--secondary--active);
+  
   --button--background-color--info: var(--background-color--info);
+  --button--background-color--info--hover: var(--background-color--info--hover);
+  --button--background-color--info--active: var(--background-color--info--active);
+
   --button--background-color--positive: var(--background-color--positive);
+  --button--background-color--positive--hover: var(--background-color--positive--hover);
+  --button--background-color--positive--active: var(--background-color--positive--active);
+
   --button--background-color--notice: var(--background-color--notice);
+  --button--background-color--notice--hover: var(--background-color--notice--hover);
+  --button--background-color--notice--active: var(--background-color--notice--active);
+  
   --button--background-color--negative: var(--background-color--negative);
+  --button--background-color--negative--hover: var(--background-color--negative--hover);
+  --button--background-color--negative--active: var(--background-color--negative--active);
+
   --button--background-color--accent: var(--background-color--accent);
+  --button--background-color--accent--hover: var(--background-color--accent--hover);
+  --button--background-color--accent--active: var(--background-color--accent--active);
+  
   --button--background-color--disabled: var(--background-color--disabled);
+  
   --button--background-color--none: var(--background-color--none);
 
+
   --button--border-color--default: var(--color--none);
+  --button--border-color--default--hover: var(--color--none);
+  --button--border-color--default--active: var(--color--none);
+  
   --button--border-color--primary: var(--color--none);
+  --button--border-color--primary--hover: var(--color--none);
+  --button--border-color--primary--active: var(--color--none);
+  
   --button--border-color--secondary: var(--color--none);
+  --button--border-color--secondary--hover: var(--color--none);
+  --button--border-color--secondary--active: var(--color--none);
+  
   --button--border-color--info: var(--color--none);
+  --button--border-color--info--hover: var(--color--none);
+  --button--border-color--info--active: var(--color--none);
+  
   --button--border-color--positive: var(--color--none);
+  --button--border-color--positive--hover: var(--color--none);
+  --button--border-color--positive--active: var(--color--none);
+
   --button--border-color--notice: var(--color--none);
+  --button--border-color--notice--hover: var(--color--none);
+  --button--border-color--notice--active: var(--color--none);
+  
   --button--border-color--negative: var(--color--none);
+  --button--border-color--negative--hover: var(--color--none);
+  --button--border-color--negative--active: var(--color--none);
+  
   --button--border-color--accent: var(--color--none);
+  --button--border-color--accent--hover: var(--color--none);
+  --button--border-color--accent--active: var(--color--none);
+  
   --button--border-color--disabled: var(--color--none);
+  
   --button--border-color--none: var(--color--none);
-
-
-  // button:hover
-  --button--hover--color--default: var(--white);
-  --button--hover--color--primary: var(--white);
-  --button--hover--color--secondary: var(--white);
-  --button--hover--color--info: var(--white);
-  --button--hover--color--positive: var(--white);
-  --button--hover--color--notice: var(--white);
-  --button--hover--color--negative: var(--white);
-  --button--hover--color--accent: var(--white);
-
-  --button--hover--background-color--default: var(--hover--background-color--default);
-  --button--hover--background-color--primary: var(--hover--background-color--primary);
-  --button--hover--background-color--secondary: var(--hover--background-color--secondary);
-  --button--hover--background-color--info: var(--hover--background-color--info);
-  --button--hover--background-color--positive: var(--hover--background-color--positive);
-  --button--hover--background-color--notice: var(--hover--background-color--notice);
-  --button--hover--background-color--negative: var(--hover--background-color--negative);
-  --button--hover--background-color--accent: var(--hover--background-color--accent);
-
-  --button--hover--border-color--default: var(--color--none);
-  --button--hover--border-color--primary: var(--color--none);
-  --button--hover--border-color--secondary: var(--color--none);
-  --button--hover--border-color--info: var(--color--none);
-  --button--hover--border-color--positive: var(--color--none);
-  --button--hover--border-color--notice: var(--color--none);
-  --button--hover--border-color--negative: var(--color--none);
-  --button--hover--border-color--accent: var(--color--none);
-
-
-  // button:active
-  --button--active--color--default: var(--white);
-  --button--active--color--primary: var(--white);
-  --button--active--color--secondary: var(--white);
-  --button--active--color--info: var(--white);
-  --button--active--color--positive: var(--white);
-  --button--active--color--notice: var(--white);
-  --button--active--color--negative: var(--white);
-  --button--active--color--accent: var(--white);
-
-  --button--active--background-color--default: var(--active--background-color--default);
-  --button--active--background-color--primary: var(--active--background-color--primary);
-  --button--active--background-color--secondary: var(--active--background-color--secondary);
-  --button--active--background-color--info: var(--active--background-color--info);
-  --button--active--background-color--positive: var(--active--background-color--positive);
-  --button--active--background-color--notice: var(--active--background-color--notice);
-  --button--active--background-color--negative: var(--active--background-color--negative);
-  --button--active--background-color--accent: var(--active--background-color--accent);
-
-  --button--active--border-color--default: var(--color--none);
-  --button--active--border-color--primary: var(--color--none);
-  --button--active--border-color--secondary: var(--color--none);
-  --button--active--border-color--info: var(--color--none);
-  --button--active--border-color--positive: var(--color--none);
-  --button--active--border-color--notice: var(--color--none);
-  --button--active--border-color--negative: var(--color--none);
-  --button--active--border-color--accent: var(--color--none);
-
-
+  
+  
   // button-border
   --button-border--color--default: var(--color--default);
+  --button-border--color--default--hover: var(--color--default--hover);
+  --button-border--color--default--active: var(--color--default--active);
+  --button-border--color--default--selected: var(--color--default--selected);
+
   --button-border--color--primary: var(--color--primary);
+  --button-border--color--primary--hover: var(--color--primary--hover);
+  --button-border--color--primary--active: var(--color--primary--active);
+  --button-border--color--primary--selected: var(--color--primary--selected);
+
   --button-border--color--secondary: var(--color--secondary);
+  --button-border--color--secondary--hover: var(--color--secondary--hover);
+  --button-border--color--secondary--active: var(--color--secondary--active);
+  --button-border--color--secondary--selected: var(--color--secondary--selected);
+  
   --button-border--color--info: var(--color--info);
+  --button-border--color--info--hover: var(--color--info--hover);
+  --button-border--color--info--active: var(--color--info--active);
+  --button-border--color--info--selected: var(--color--info--selected);
+  
   --button-border--color--positive: var(--color--positive);
+  --button-border--color--positive--hover: var(--color--positive--hover);
+  --button-border--color--positive--active: var(--color--positive--active);
+  --button-border--color--positive--selected: var(--color--positive--selected);
+  
   --button-border--color--notice: var(--color--notice);
+  --button-border--color--notice--hover: var(--color--notice--hover);
+  --button-border--color--notice--active: var(--color--notice--active);
+  --button-border--color--notice--selected: var(--color--notice--selected);
+  
   --button-border--color--negative: var(--color--negative);
+  --button-border--color--negative--hover: var(--color--negative--hover);
+  --button-border--color--negative--active: var(--color--negative--active);
+  --button-border--color--negative--selected: var(--color--negative--selected);
+  
   --button-border--color--accent: var(--color--accent);
+  --button-border--color--accent--hover: var(--color--accent--hover);
+  --button-border--color--accent--active: var(--color--accent--active);
+  --button-border--color--accent--selected: var(--color--accent--selected);
+  
   --button-border--color--disabled: var(--color--disabled);
+  
   --button-border--color--none: var(--color--none);
 
+
   --button-border--background-color--default: var(--color--none);
+  --button-border--background-color--default--hover: var(--color--gray-200);
+  --button-border--background-color--default--active: var(--color--none);
+  --button-border--background-color--default--selected: var(--color--none);
+  
   --button-border--background-color--primary: var(--color--none);
+  --button-border--background-color--primary--hover: var(--color--blue-200);
+  --button-border--background-color--primary--active: var(--color--none);
+  --button-border--background-color--primary--selected: var(--color--none);
+  
   --button-border--background-color--secondary: var(--color--none);
+  --button-border--background-color--secondary--hover: var(--color--celery-200);
+  --button-border--background-color--secondary--active: var(--color--none);
+  --button-border--background-color--secondary--selected: var(--color--none);
+  
   --button-border--background-color--info: var(--color--none);
+  --button-border--background-color--info--hover: var(--color--info-200);
+  --button-border--background-color--info--active: var(--color--none);
+  --button-border--background-color--info--selected: var(--color--none);
+  
   --button-border--background-color--positive: var(--color--none);
+  --button-border--background-color--positive--hover: var(--color--positive-200);
+  --button-border--background-color--positive--active: var(--color--none);
+  --button-border--background-color--positive--selected: var(--color--none);
+  
   --button-border--background-color--notice: var(--color--none);
+  --button-border--background-color--notice--hover: var(--color--notice-200);
+  --button-border--background-color--notice--active: var(--color--none);
+  --button-border--background-color--notice--selected: var(--color--none);
+
   --button-border--background-color--negative: var(--color--none);
+  --button-border--background-color--negative--hover: var(--color--negative-200);
+  --button-border--background-color--negative--active: var(--color--none);
+  --button-border--background-color--negative--selected: var(--color--none);
+
   --button-border--background-color--accent: var(--color--none);
+  --button-border--background-color--accent--hover: var(--color--accent-200);
+  --button-border--background-color--accent--active: var(--color--none);
+  --button-border--background-color--accent--selected: var(--color--none);
+  
   --button-border--background-color--disabled: var(--color--none);
+  
   --button-border--background-color--none: var(--color--none);
+  
 
   --button-border--border-color--default: var(--border-color--default);
+  --button-border--border-color--default--hover: var(--border-color--default--hover);
+  --button-border--border-color--default--active: var(--border-color--default--active);
+  --button-border--border-color--default--selected: var(--border-color--default--selected);
+  
   --button-border--border-color--primary: var(--border-color--primary);
+  --button-border--border-color--primary--hover: var(--border-color--primary--hover);
+  --button-border--border-color--primary--active: var(--border-color--primary--active);
+  --button-border--border-color--primary--selected: var(--border-color--primary--selected);
+  
   --button-border--border-color--secondary: var(--border-color--secondary);
+  --button-border--border-color--secondary--hover: var(--border-color--secondary--hover);
+  --button-border--border-color--secondary--active: var(--border-color--secondary--active);
+  --button-border--border-color--secondary--selected: var(--border-color--secondary--selected);
+  
   --button-border--border-color--info: var(--border-color--info);
+  --button-border--border-color--info--hover: var(--border-color--info--hover);
+  --button-border--border-color--info--active: var(--border-color--info--active);
+  --button-border--border-color--info--selected: var(--border-color--info--selected);
+  
   --button-border--border-color--positive: var(--border-color--positive);
+  --button-border--border-color--positive--hover: var(--border-color--positive--hover);
+  --button-border--border-color--positive--active: var(--border-color--positive--active);
+  --button-border--border-color--positive--selected: var(--border-color--positive--selected);
+
   --button-border--border-color--notice: var(--border-color--notice);
+  --button-border--border-color--notice--hover: var(--border-color--notice--hover);
+  --button-border--border-color--notice--active: var(--border-color--notice--active);
+  --button-border--border-color--notice--selected: var(--border-color--notice--selected);
+  
   --button-border--border-color--negative: var(--border-color--negative);
+  --button-border--border-color--negative--hover: var(--border-color--negative--hover);
+  --button-border--border-color--negative--active: var(--border-color--negative--active);
+  --button-border--border-color--negative--selected: var(--border-color--negative--selected);
+  
   --button-border--border-color--accent: var(--border-color--accent);
+  --button-border--border-color--accent--hover: var(--border-color--accent--hover);
+  --button-border--border-color--accent--active: var(--border-color--accent--active);
+  --button-border--border-color--accent--selected: var(--border-color--accent--selected);
+  
   --button-border--border-color--disabled: var(--border-color--disabled);
+  
   --button-border--border-color--none: var(--border-color--none);
-
-
-  // button-border:hover
-  --button-border--hover--color--default: var(--hover--color--default);
-  --button-border--hover--color--primary: var(--hover--color--primary);
-  --button-border--hover--color--secondary: var(--hover--color--secondary);
-  --button-border--hover--color--info: var(--hover--color--info);
-  --button-border--hover--color--positive: var(--hover--color--positive);
-  --button-border--hover--color--notice: var(--hover--color--notice);
-  --button-border--hover--color--negative: var(--hover--color--negative);
-  --button-border--hover--color--accent: var(--hover--color--accent);
-
-  --button-border--hover--background-color--default: var(--color--gray-200);
-  --button-border--hover--background-color--primary: var(--color--blue-200);
-  --button-border--hover--background-color--secondary: var(--color--celery-200);
-  --button-border--hover--background-color--info: var(--color--info-200);
-  --button-border--hover--background-color--positive: var(--color--positive-200);
-  --button-border--hover--background-color--notice: var(--color--notice-200);
-  --button-border--hover--background-color--negative: var(--color--negative-200);
-  --button-border--hover--background-color--accent: var(--color--accent-200);
-
-  --button-border--hover--border-color--default: var(--hover--border-color--default);
-  --button-border--hover--border-color--primary: var(--hover--border-color--primary);
-  --button-border--hover--border-color--secondary: var(--hover--border-color--secondary);
-  --button-border--hover--border-color--info: var(--hover--border-color--info);
-  --button-border--hover--border-color--positive: var(--hover--border-color--positive);
-  --button-border--hover--border-color--notice: var(--hover--border-color--notice);
-  --button-border--hover--border-color--negative: var(--hover--border-color--negative);
-  --button-border--hover--border-color--accent: var(--hover--border-color--accent);
-
-
-  // button-border:active
-  --button-border--active--color--default: var(--active--color--default);
-  --button-border--active--color--primary: var(--active--color--primary);
-  --button-border--active--color--secondary: var(--active--color--secondary);
-  --button-border--active--color--info: var(--active--color--info);
-  --button-border--active--color--positive: var(--active--color--positive);
-  --button-border--active--color--notice: var(--active--color--notice);
-  --button-border--active--color--negative: var(--active--color--negative);
-  --button-border--active--color--accent: var(--active--color--accent);
-
-  --button-border--active--background-color--default: var(--color--gray-300);
-  --button-border--active--background-color--primary: var(--color--none);
-  --button-border--active--background-color--secondary: var(--color--none);
-  --button-border--active--background-color--info: var(--color--none);
-  --button-border--active--background-color--positive: var(--color--none);
-  --button-border--active--background-color--notice: var(--color--none);
-  --button-border--active--background-color--negative: var(--color--none);
-  --button-border--active--background-color--accent: var(--color--none);
-
-  --button-border--active--border-color--default: var(--selected--border-color--default);
-  --button-border--active--border-color--primary: var(--selected--border-color--primary);
-  --button-border--active--border-color--secondary: var(--selected--border-color--secondary);
-  --button-border--active--border-color--info: var(--selected--border-color--info);
-  --button-border--active--border-color--positive: var(--selected--border-color--positive);
-  --button-border--active--border-color--notice: var(--selected--border-color--notice);
-  --button-border--active--border-color--negative: var(--selected--border-color--negative);
-  --button-border--active--border-color--accent: var(--selected--border-color--accent);
-
-
-  // button-border.selected
-  --button-border--selected--color--default: var(--selected--color--default);
-  --button-border--selected--color--primary: var(--selected--color--primary);
-  --button-border--selected--color--secondary: var(--selected--color--secondary);
-  --button-border--selected--color--info: var(--selected--color--info);
-  --button-border--selected--color--positive: var(--selected--color--positive);
-  --button-border--selected--color--notice: var(--selected--color--notice);
-  --button-border--selected--color--negative: var(--selected--color--negative);
-  --button-border--selected--color--accent: var(--selected--color--accent);
-
-  --button-border--selected--background-color--default: var(--color--none);
-  --button-border--selected--background-color--primary: var(--color--none);
-  --button-border--selected--background-color--secondary: var(--color--none);
-  --button-border--selected--background-color--info: var(--color--none);
-  --button-border--selected--background-color--positive: var(--color--none);
-  --button-border--selected--background-color--notice: var(--color--none);
-  --button-border--selected--background-color--negative: var(--color--none);
-  --button-border--selected--background-color--accent: var(--color--none);
-
-  --button-border--selected--border-color--default: var(--selected--border-color--default);
-  --button-border--selected--border-color--primary: var(--selected--border-color--primary);
-  --button-border--selected--border-color--secondary: var(--selected--border-color--secondary);
-  --button-border--selected--border-color--info: var(--selected--border-color--info);
-  --button-border--selected--border-color--positive: var(--selected--border-color--positive);
-  --button-border--selected--border-color--notice: var(--selected--border-color--notice);
-  --button-border--selected--border-color--negative: var(--selected--border-color--negative);
-  --button-border--selected--border-color--accent: var(--selected--border-color--accent);
 
 
   // link
   --link--color : var(--color--blue-900);
-  --link--hover--color: var(--color--red-900);
+  --link--color--hover: var(--color--red-900);
 
-  
+
+  // icon-link
+  --icon-link--color : var(--color--gray-900);
+  --icon-link--color--hover: var(--color--red-900);
+
+
   // status-label
   --status-label--color--default: var(--white);
   --status-label--color--primary: var(--white);
@@ -740,4 +797,7 @@
 
   // tiptap
   --tiptap--color: var(--color--default);
+
+  // admin-tab
+  --admin-tab--button--background-color--active: var(--color--gray-075);
 }
