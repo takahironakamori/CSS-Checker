@@ -1,0 +1,33 @@
+$display--inline : inline;
+$display--block : block;
+$display--inline-block : inline-block;
+$display--list-item : list-item;
+$display--none : none;
+$display--flex : flex;
+$display--grid : grid;
+
+$flex-direction--row : row;
+$flex-direction--row-reverse : row-reverse;
+$flex-direction--column : column;
+$flex-direction--column-reverse: column-reverse;
+
+$flex-wrap--nowrap : nowrap;
+$flex-wrap--wrap : wrap;
+$flex-wrap--wrap-reverse : wrap-reverse;
+
+$flex-basis--auto : auto;
+$flex-basis--content : content;
+
+$gap--none : 0;
+$gap--050 : 2px;
+$gap--075 : 4px;
+$gap--100 : 8px;
+$gap--200 : 12px;
+$gap--300 : 16px;
+$gap--400 : 24px;
+$gap--500 : 32px;
+$gap--600 : 40px;
+$gap--700 : 48px;
+$gap--800 : 64px;
+$gap--900 : 80px;
+$gap--1000 : 96px;

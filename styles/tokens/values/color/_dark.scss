@@ -1,0 +1,338 @@
+
+$none : none;
+$white : rgb(0, 0, 0);
+$black : rgb(255, 255, 255);
+
+// gray
+$gray-050 :rgb(29, 29, 29);
+$gray-075 :rgb(38, 38, 38);
+$gray-100 :rgb(50, 50, 50);
+$gray-200 :rgb(63, 63, 63);
+$gray-300 :rgb(84, 84, 84);
+$gray-400 :rgb(112, 112, 112);
+$gray-500 :rgb(144, 144, 144);
+$gray-600 :rgb(178, 178, 178);
+$gray-700 :rgb(209, 209, 209);
+$gray-800 :rgb(235, 235, 235);
+$gray-900 :rgb(255, 255, 255);
+
+// blue
+$blue-100 : rgb(0, 56, 119);
+$blue-200 : rgb(0, 65, 138);
+$blue-300 : rgb(0, 77, 163);
+$blue-400 : rgb(0, 89, 194);
+$blue-500 : rgb(3, 103, 224);
+$blue-600 : rgb(19, 121, 243);
+$blue-700 : rgb(52, 143, 244);
+$blue-800 : rgb(84, 163, 246);
+$blue-900 : rgb(114, 183, 249);
+$blue-1000 : rgb(143, 202, 252);
+$blue-1100 : rgb(174, 219, 254);
+$blue-1200 : rgb(204, 233, 255);
+$blue-1300 : rgb(232, 246, 255);
+$blue-1400 : rgb(255, 255, 255);
+
+// red
+$red-100 : rgb(123, 0, 0);
+$red-200 : rgb(141, 0, 0);
+$red-300 : rgb(165, 0, 0);
+$red-400 : rgb(190, 4, 3);
+$red-500 : rgb(215, 25, 19);
+$red-600 : rgb(234, 56, 41);
+$red-700 : rgb(246, 88, 67);
+$red-800 : rgb(255, 117, 94);
+$red-900 : rgb(255, 149, 129);
+$red-1000 : rgb(255, 176, 161);
+$red-1100 : rgb(255, 201, 189);
+$red-1200 : rgb(255, 222, 216);
+$red-1300 : rgb(255, 241, 238);
+$red-1400 : rgb(255, 255, 255);
+
+// orange
+$orange-100 : rgb(102, 37, 0);
+$orange-200 : rgb(117, 45, 0);
+$orange-300 : rgb(137, 55, 0);
+$orange-400 : rgb(158, 66, 0);
+$orange-500 : rgb(180, 78, 0);
+$orange-600 : rgb(202, 93, 0);
+$orange-700 : rgb(225, 109, 0);
+$orange-800 : rgb(244, 129, 12);
+$orange-900 : rgb(254, 154, 46);
+$orange-1000 : rgb(255, 181, 88);
+$orange-1100 : rgb(253, 206, 136);
+$orange-1200 : rgb(255, 225, 179);
+$orange-1300 : rgb(255, 242, 221);
+$orange-1400 : rgb(255, 253, 249);
+
+// yellow
+$yellow-100 : rgb(76, 54, 0);
+$yellow-200 : rgb(88, 64, 0);
+$yellow-300 : rgb(103, 76, 0);
+$yellow-400 : rgb(119, 89, 0);
+$yellow-500 : rgb(136, 104, 0);
+$yellow-600 : rgb(155, 120, 0);
+$yellow-700 : rgb(174, 137, 0);
+$yellow-800 : rgb(192, 156, 0);
+$yellow-900 : rgb(211, 174, 0);
+$yellow-1000 : rgb(228, 194, 0);
+$yellow-1100 : rgb(244, 213, 0);
+$yellow-1200 : rgb(249, 232, 92);
+$yellow-1300 : rgb(252, 246, 187);
+$yellow-1400 : rgb(255, 255, 255);
+
+// chartreuse
+$chartreuse-100 : rgb(48, 64, 0);
+$chartreuse-200 : rgb(55, 74, 0);
+$chartreuse-300 : rgb(65, 87, 0);
+$chartreuse-400 : rgb(76, 102, 0);
+$chartreuse-500 : rgb(89, 118, 0);
+$chartreuse-600 : rgb(102, 136, 0);
+$chartreuse-700 : rgb(117, 154, 0);
+$chartreuse-800 : rgb(132, 173, 1);
+$chartreuse-900 : rgb(148, 192, 8);
+$chartreuse-1000 : rgb(166, 211, 18);
+$chartreuse-1100 : rgb(184, 229, 37);
+$chartreuse-1200 : rgb(205, 245, 71);
+$chartreuse-1300 : rgb(231, 254, 154);
+$chartreuse-1400 : rgb(255, 255, 255);
+
+// celery
+$celery-100 : rgb(0, 69, 10);
+$celery-200 : rgb(0, 80, 12);
+$celery-300 : rgb(0, 94, 14);
+$celery-400 : rgb(0, 109, 15);
+$celery-500 : rgb(0, 127, 15);
+$celery-600 : rgb(0, 145, 18);
+$celery-700 : rgb(4, 165, 30);
+$celery-800 : rgb(34, 184, 51);
+$celery-900 : rgb(68, 202, 73);
+$celery-1000 : rgb(105, 220, 99);
+$celery-1100 : rgb(142, 235, 127);
+$celery-1200 : rgb(180, 247, 162);
+$celery-1300 : rgb(221, 253, 211);
+$celery-1400 : rgb(255, 255, 255);
+
+// green
+$green-100 : rgb(4, 67, 41);
+$green-200 : rgb(0, 78, 47);
+$green-300 : rgb(0, 92, 56);
+$green-400 : rgb(0, 108, 67);
+$green-500 : rgb(0, 125, 78);
+$green-600 : rgb(0, 143, 93);
+$green-700 : rgb(18, 162, 108);
+$green-800 : rgb(43, 180, 125);
+$green-900 : rgb(67, 199, 143);
+$green-1000 : rgb(94, 217, 162);
+$green-1100 : rgb(129, 233, 184);
+$green-1200 : rgb(177, 244, 209);
+$green-1300 : rgb(223, 250, 234);
+$green-1400 : rgb(254, 255, 252);
+
+// seafoam
+$seafoam-100 : rgb(18, 65, 63);
+$seafoam-200 : rgb(14, 76, 73);
+$seafoam-300 : rgb(4, 90, 87);
+$seafoam-400 : rgb(0, 105, 101);
+$seafoam-500 : rgb(0, 122, 117);
+$seafoam-600 : rgb(0, 140, 135);
+$seafoam-700 : rgb(0, 158, 152);
+$seafoam-800 : rgb(3, 178, 171);
+$seafoam-900 : rgb(54, 197, 189);
+$seafoam-1000 : rgb(93, 214, 207);
+$seafoam-1100 : rgb(132, 230, 223);
+$seafoam-1200 : rgb(176, 242, 236);
+$seafoam-1300 : rgb(223, 249, 246);
+$seafoam-1400 : rgb(254, 255, 254);
+
+// cyan
+$cyan-100 : rgb(0, 61, 98);
+$cyan-200 : rgb(0, 71, 111);
+$cyan-300 : rgb(0, 85, 127);
+$cyan-400 : rgb(0, 100, 145);
+$cyan-500 : rgb(0, 116, 162);
+$cyan-600 : rgb(0, 134, 180);
+$cyan-700 : rgb(0, 153, 198);
+$cyan-800 : rgb(14, 173, 215);
+$cyan-900 : rgb(44, 193, 230);
+$cyan-1000 : rgb(84, 211, 241);
+$cyan-1100 : rgb(127, 228, 249);
+$cyan-1200 : rgb(167, 241, 255);
+$cyan-1300 : rgb(215, 250, 255);
+$cyan-1400 : rgb(255, 255, 255);
+
+// indigo
+$indigo-100 : rgb(40, 44, 140);
+$indigo-200 : rgb(47, 52, 163);
+$indigo-300 : rgb(57, 63, 187);
+$indigo-400 : rgb(70, 75, 211);
+$indigo-500 : rgb(85, 91, 231);
+$indigo-600 : rgb(104, 109, 244);
+$indigo-700 : rgb(124, 129, 251);
+$indigo-800 : rgb(145, 149, 255);
+$indigo-900 : rgb(167, 170, 255);
+$indigo-1000 : rgb(188, 190, 255);
+$indigo-1100 : rgb(208, 210, 255);
+$indigo-1200 : rgb(226, 228, 255);
+$indigo-1300 : rgb(243, 243, 254);
+$indigo-1400 : rgb(255, 255, 255);
+
+// purple
+$purple-100 : rgb(76, 13, 157);
+$purple-200 : rgb(89, 17, 177);
+$purple-300 : rgb(105, 28, 200);
+$purple-400 : rgb(122, 45, 218);
+$purple-500 : rgb(140, 65, 233);
+$purple-600 : rgb(157, 87, 243);
+$purple-700 : rgb(172, 111, 249);
+$purple-800 : rgb(187, 135, 251);
+$purple-900 : rgb(202, 159, 252);
+$purple-1000 : rgb(215, 182, 254);
+$purple-1100 : rgb(228, 204, 254);
+$purple-1200 : rgb(239, 223, 255);
+$purple-1300 : rgb(249, 240, 255);
+$purple-1400 : rgb(255, 253, 255);
+
+// fuchsia
+$fuchsia-100 : rgb(107, 3, 106);
+$fuchsia-200 : rgb(123, 0, 123);
+$fuchsia-300 : rgb(144, 0, 145);
+$fuchsia-400 : rgb(165, 13, 166);
+$fuchsia-500 : rgb(185, 37, 185);
+$fuchsia-600 : rgb(205, 57, 206);
+$fuchsia-700 : rgb(223, 81, 224);
+$fuchsia-800 : rgb(235, 110, 236);
+$fuchsia-900 : rgb(244, 140, 242);
+$fuchsia-1000 : rgb(250, 168, 245);
+$fuchsia-1100 : rgb(254, 194, 248);
+$fuchsia-1200 : rgb(255, 219, 250);
+$fuchsia-1300 : rgb(255, 239, 252);
+$fuchsia-1400 : rgb(255, 253, 255);
+
+// magenta
+$magenta-100 : rgb(118, 0, 58);
+$magenta-200 : rgb(137, 0, 66);
+$magenta-300 : rgb(160, 0, 77);
+$magenta-400 : rgb(182, 18, 90);
+$magenta-500 : rgb(203, 38, 109);
+$magenta-600 : rgb(222, 61, 130);
+$magenta-700 : rgb(237, 87, 149);
+$magenta-800 : rgb(249, 114, 167);
+$magenta-900 : rgb(255, 143, 185);
+$magenta-1000 : rgb(255, 172, 202);
+$magenta-1100 : rgb(255, 198, 218);
+$magenta-1200 : rgb(255, 221, 233);
+$magenta-1300 : rgb(255, 240, 245);
+$magenta-1400 : rgb(255, 252, 253);
+
+// Status Colors
+// info
+$info-100 : #{$blue-100};
+$info-200 : #{$blue-200};
+$info-300 : #{$blue-300};
+$info-400 : #{$blue-400};
+$info-500 : #{$blue-500};
+$info-600 : #{$blue-600};
+$info-700 : #{$blue-700};
+$info-800 : #{$blue-800};
+$info-900 : #{$blue-900};
+$info-1000 : #{$blue-1000};
+$info-1100 : #{$blue-1100};
+$info-1200 : #{$blue-1200};
+$info-1300 : #{$blue-1300};
+$info-1400 : #{$blue-1400};
+
+// positive
+$positive-100 : #{$green-100};
+$positive-200 : #{$green-200};
+$positive-300 : #{$green-300};
+$positive-400 : #{$green-400};
+$positive-500 : #{$green-500};
+$positive-600 : #{$green-600};
+$positive-700 : #{$green-700};
+$positive-800 : #{$green-800};
+$positive-900 : #{$green-900};
+$positive-1000 : #{$green-1000};
+$positive-1100 : #{$green-1100};
+$positive-1200 : #{$green-1200};
+$positive-1300 : #{$green-1300};
+$positive-1400 : #{$green-1400};
+
+// notice
+$notice-100 : #{$orange-100};
+$notice-200 : #{$orange-200};
+$notice-300 : #{$orange-300};
+$notice-400 : #{$orange-400};
+$notice-500 : #{$orange-500};
+$notice-600 : #{$orange-600};
+$notice-700 : #{$orange-700};
+$notice-800 : #{$orange-800};
+$notice-900 : #{$orange-900};
+$notice-1000 : #{$orange-1000};
+$notice-1100 : #{$orange-1100};
+$notice-1200 : #{$orange-1200};
+$notice-1300 : #{$orange-1300};
+$notice-1400 : #{$orange-1400};
+
+// negative
+$negative-100 : #{$red-100};
+$negative-200 : #{$red-200};
+$negative-300 : #{$red-300};
+$negative-400 : #{$red-400};
+$negative-500 : #{$red-500};
+$negative-600 : #{$red-600};
+$negative-700 : #{$red-700};
+$negative-800 : #{$red-800};
+$negative-900 : #{$red-900};
+$negative-1000 : #{$red-1000};
+$negative-1100 : #{$red-1100};
+$negative-1200 : #{$red-1200};
+$negative-1300 : #{$red-1300};
+$negative-1400 : #{$red-1400};
+
+// accent
+$accent-100 : #{$blue-100};
+$accent-200 : #{$blue-200};
+$accent-300 : #{$blue-300};
+$accent-400 : #{$blue-400};
+$accent-500 : #{$blue-500};
+$accent-600 : #{$blue-600};
+$accent-700 : #{$blue-700};
+$accent-800 : #{$blue-800};
+$accent-900 : #{$blue-900};
+$accent-1000 : #{$blue-1000};
+$accent-1100 : #{$blue-1100};
+$accent-1200 : #{$blue-1200};
+$accent-1300 : #{$blue-1300};
+$accent-1400 : #{$blue-1400};
+
+// default
+$default-100 : #{$gray-050};
+$default-200 : #{$gray-075};
+$default-300 : #{$gray-100};
+$default-400 : #{$gray-200};
+$default-500 : #{$gray-300};
+$default-600 : #{$gray-400};
+$default-700 : #{$gray-500};
+$default-800 : #{$gray-600};
+$default-900 : #{$gray-700};
+$default-1000 : #{$gray-800};
+$default-1100 : #{$gray-900};
+$default-1200 : #{$gray-900};
+$default-1300 : #{$gray-900};
+$default-1400 : #{$gray-900};
+
+// disabled
+$disabled-100 : #{$gray-050};
+$disabled-200 : #{$gray-075};
+$disabled-300 : #{$gray-100};
+$disabled-400 : #{$gray-200};
+$disabled-500 : #{$gray-300};
+$disabled-600 : #{$gray-400};
+$disabled-700 : #{$gray-500};
+$disabled-800 : #{$gray-600};
+$disabled-900 : #{$gray-700};
+$disabled-1000 : #{$gray-800};
+$disabled-1100 : #{$gray-900};
+$disabled-1200 : #{$gray-900};
+$disabled-1300 : #{$gray-900};
+$disabled-1400 : #{$gray-900};

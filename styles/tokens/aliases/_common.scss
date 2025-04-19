@@ -1,0 +1,438 @@
+@use '../values/background' as background;
+@use '../values/border' as border;
+@use '../values/box-shadow' as box-shadow;
+@use '../values/box-sizing' as box-sizing;
+@use '../values/clear' as clear;
+@use '../values/cursor' as cursor;
+@use '../values/display' as display;
+@use '../values/float' as float;
+@use '../values/font' as font;
+@use '../values/image' as image;
+@use '../values/list' as list;
+@use '../values/margin' as margin;
+@use '../values/overflow' as overflow;
+@use '../values/padding' as padding;
+@use '../values/position' as position;
+@use '../values/table' as table;
+@use '../values/text' as text;
+@use '../values/transition' as transition;
+@use '../values/visibility' as visibility;
+@use '../values/z-index' as z-index;
+
+
+// background
+$background-attachment--scroll : #{background.$background-attachment--scroll};
+$background-attachment--fixed : #{background.$background-attachment--fixed};
+
+$background-repeat--repeat : #{background.$background-repeat--repeat};
+$background-repeat--repeat-x : #{background.$background-repeat--repeat-x};
+$background-repeat--repeat-y : #{background.$background-repeat--repeat-y};
+$background-repeat--no-repeat : #{background.$background-repeat--no-repeat};
+
+
+// border
+$border-radius--000 : #{border.$border-radius--000};
+$border-radius--100 : #{border.$border-radius--100};
+$border-radius--200 : #{border.$border-radius--200};
+$border-radius--300 : #{border.$border-radius--300};
+$border-radius--400 : #{border.$border-radius--400};
+$border-radius--500 : #{border.$border-radius--500};
+$border-radius--600 : #{border.$border-radius--600};
+$border-radius--700 : #{border.$border-radius--700};
+$border-radius--800 : #{border.$border-radius--800};
+$border-radius--900 : #{border.$border-radius--900};
+$border-radius--1000 : #{border.$border-radius--1000};
+$border-radius--full : #{border.$border-radius--full};
+
+$border-style--none : #{border.$border-style--none};
+$border-style--hidden : #{border.$border-style--hidden};
+$border-style--solid : #{border.$border-style--solid};
+$border-style--double : #{border.$border-style--double};
+$border-style--groove : #{border.$border-style--groove};
+$border-style--ridge : #{border.$border-style--ridge};
+$border-style--inset : #{border.$border-style--inset};
+$border-style--outset : #{border.$border-style--outset};
+$border-style--dotted : #{border.$border-style--dotted};
+$border-style--dashed : #{border.$border-style--dashed};
+
+$border-width--100 : #{border.$border-width--100};
+$border-width--200 : #{border.$border-width--200};
+$border-width--300 : #{border.$border-width--300};
+$border-width--400 : #{border.$border-width--400};
+$border-width--500 : #{border.$border-width--500};
+$border-width--600 : #{border.$border-width--600};
+$border-width--700 : #{border.$border-width--700};
+$border-width--800 : #{border.$border-width--800};
+$border-width--900 : #{border.$border-width--900};
+$border-width--1000 : #{border.$border-width--1000};
+
+
+//box-shadow
+$box-shadow--none : #{box-shadow.$box-shadow--none};
+$box-shadow--100 : #{box-shadow.$box-shadow--100};
+$box-shadow--200 : #{box-shadow.$box-shadow--200};
+$box-shadow--300 : #{box-shadow.$box-shadow--300};
+$box-shadow--400 : #{box-shadow.$box-shadow--400};
+$box-shadow--500 : #{box-shadow.$box-shadow--500};
+$box-shadow--600 : #{box-shadow.$box-shadow--600};
+$box-shadow--700 : #{box-shadow.$box-shadow--700};
+$box-shadow--800 : #{box-shadow.$box-shadow--800};
+$box-shadow--900 : #{box-shadow.$box-shadow--900};
+$box-shadow--1000 : #{box-shadow.$box-shadow--1000};
+
+$box-shadow-x--none : #{box-shadow.$box-shadow-x--none};
+$box-shadow-x--100 : #{box-shadow.$box-shadow-x--100};
+$box-shadow-x--200 : #{box-shadow.$box-shadow-x--200};
+$box-shadow-x--300 : #{box-shadow.$box-shadow-x--300};
+$box-shadow-x--400 : #{box-shadow.$box-shadow-x--400};
+$box-shadow-x--500 : #{box-shadow.$box-shadow-x--500};
+$box-shadow-x--600 : #{box-shadow.$box-shadow-x--600};
+$box-shadow-x--700 : #{box-shadow.$box-shadow-x--700};
+$box-shadow-x--800 : #{box-shadow.$box-shadow-x--800};
+$box-shadow-x--900 : #{box-shadow.$box-shadow-x--900};
+$box-shadow-x--1000 : #{box-shadow.$box-shadow-x--1000};
+
+$box-shadow-y--none : #{box-shadow.$box-shadow-y--none};
+$box-shadow-y--100 : #{box-shadow.$box-shadow-y--100};
+$box-shadow-y--200 : #{box-shadow.$box-shadow-y--200};
+$box-shadow-y--300 : #{box-shadow.$box-shadow-y--300};
+$box-shadow-y--400 : #{box-shadow.$box-shadow-y--400};
+$box-shadow-y--500 : #{box-shadow.$box-shadow-y--500};
+$box-shadow-y--600 : #{box-shadow.$box-shadow-y--600};
+$box-shadow-y--700 : #{box-shadow.$box-shadow-y--700};
+$box-shadow-y--800 : #{box-shadow.$box-shadow-y--800};
+$box-shadow-y--900 : #{box-shadow.$box-shadow-y--900};
+$box-shadow-y--1000 : #{box-shadow.$box-shadow-y--1000};
+
+// box-sizing
+$box-sizing--border-box : #{box-sizing.$box-sizing--border-box};
+$box-sizing--content-box : #{box-sizing.$box-sizing--content-box};
+
+
+// clear
+$clear--none : #{clear.$clear--none};
+$clear--left : #{clear.$clear--left};
+$clear--right : #{clear.$clear--right};
+$clear--both : #{clear.$clear--both};
+
+
+// cursor
+$cursor--auto : #{cursor.$cursor--auto};
+$cursor--default : #{cursor.$cursor--default};
+$cursor--pointer : #{cursor.$cursor--pointer};
+$cursor--crosshair : #{cursor.$cursor--crosshair};
+$cursor--move : #{cursor.$cursor--move};
+$cursor--text : #{cursor.$cursor--text};
+$cursor--wait : #{cursor.$cursor--wait};
+$cursor--help : #{cursor.$cursor--help};
+$cursor--n-resize : #{cursor.$cursor--n-resize};
+$cursor--e-resize : #{cursor.$cursor--e-resize};
+$cursor--s-resize : #{cursor.$cursor--s-resize};
+$cursor--w-resize : #{cursor.$cursor--w-resize};
+$cursor--ne-resize : #{cursor.$cursor--ne-resize};
+$cursor--se-resize : #{cursor.$cursor--se-resize};
+$cursor--sw-resize : #{cursor.$cursor--sw-resize};
+$cursor--nw-resize : #{cursor.$cursor--nw-resize};
+
+
+// display
+$display--inline : #{display.$display--inline};
+$display--block : #{display.$display--block};
+$display--inline-block : #{display.$display--inline-block};
+$display--list-item : #{display.$display--list-item};
+$display--none : #{display.$display--none};
+$display--flex : #{display.$display--flex};
+$display--grid : #{display.$display--grid};
+
+$flex-direction--row : #{display.$flex-direction--row};
+$flex-direction--row-reverse : #{display.$flex-direction--row-reverse};
+$flex-direction--column : #{display.$flex-direction--column};
+$flex-direction--column-reverse: c#{display.$flex-direction--column-reverse};
+
+$flex-wrap--nowrap : #{display.$flex-wrap--nowrap};
+$flex-wrap--wrap : #{display.$flex-wrap--wrap};
+$flex-wrap--wrap-reverse : #{display.$flex-wrap--wrap-reverse};
+
+$flex-basis--auto : #{display.$flex-basis--auto};
+$flex-basis--content : #{display.$flex-basis--content};
+
+$gap--none : #{display.$gap--none};
+$gap--050 : #{display.$gap--050};
+$gap--075 : #{display.$gap--075};
+$gap--100 : #{display.$gap--100};
+$gap--200 : #{display.$gap--200};
+$gap--300 : #{display.$gap--300};
+$gap--400 : #{display.$gap--400};
+$gap--500 : #{display.$gap--500};
+$gap--600 : #{display.$gap--600};
+$gap--700 : #{display.$gap--700};
+$gap--800 : #{display.$gap--800};
+$gap--900 : #{display.$gap--900};
+$gap--1000 : #{display.$gap--1000};
+
+
+// float
+$float--none : #{float.$float--none};
+$float--left : #{float.$float--left};
+$float--right : #{float.$float--right};
+
+
+// font
+$font-family--sans : #{font.$font-family--sans};
+$font-family--serif : #{font.$font-family--serif};
+$font-family--code : #{font.$font-family--code};
+
+$font-size--050 : #{font.$font-size--050};
+$font-size--075 : #{font.$font-size--075};
+$font-size--100 : #{font.$font-size--100};
+$font-size--200 : #{font.$font-size--200};
+$font-size--300 : #{font.$font-size--300};
+$font-size--400 : #{font.$font-size--400};
+$font-size--500 : #{font.$font-size--500};
+$font-size--600 : #{font.$font-size--600};
+$font-size--700 : #{font.$font-size--700};
+$font-size--800 : #{font.$font-size--800};
+$font-size--900 : #{font.$font-size--900};
+$font-size--1000 : #{font.$font-size--1000};
+$font-size--1100 : #{font.$font-size--1100};
+$font-size--1200 : #{font.$font-size--1200};
+$font-size--1300 : #{font.$font-size--1300};
+
+$font-style--italic : #{font.$font-style--italic};
+$font-style--default : #{font.$font-style--default};
+
+$font-weight--thin: #{font.$font-weight--thin};
+$font-weight--extra-light: #{font.$font-weight--extra-light};
+$font-weight--light: #{font.$font-weight--light};
+$font-weight--regular : #{font.$font-weight--regular};
+$font-weight--medium : #{font.$font-weight--medium};
+$font-weight--semi-bold : #{font.$font-weight--semi-bold};
+$font-weight--bold : #{font.$font-weight--bold};
+$font-weight--extra-bold : #{font.$font-weight--extra-bold};
+$font-weight--black : #{font.$font-weight--black};
+
+$webkit-font-smoothing--none : #{font.$webkit-font-smoothing--none};
+$webkit-font-smoothing--antialiased : #{font.$webkit-font-smoothing--antialiased};
+$webkit-font-smoothing--subpixel-antialiased : #{font.$webkit-font-smoothing--subpixel-antialiased};
+$moz-osx-font-smoothing--grayscal : #{font.$moz-osx-font-smoothing--grayscal};
+
+$font-feature-settings--default : #{font.$font-feature-settings--default};
+$font-feature-settings--palt : #{font.$font-feature-settings--palt};
+
+
+// image
+$object-fit--fill : #{image.$object-fit--fill};
+$object-fit--contain : #{image.$object-fit--contain};
+$object-fit--cover : #{image.$object-fit--cover};
+$object-fit--none : #{image.$object-fit--none};
+$object-fit--scale-down : #{image.$object-fit--scale-down};
+
+
+// list
+$list-style-position--outside : #{list.$list-style-position--outside};
+$list-style-position--inside : #{list.$list-style-position--inside};
+
+$list-style-type--none : #{list.$list-style-type--none};
+$list-style-type--disc : #{list.$list-style-type--disc};
+$list-style-type--circle : #{list.$list-style-type--circle};
+$list-style-type--square : #{list.$list-style-type--square};
+$list-style-type--decimal : #{list.$list-style-type--decimal};
+$list-style-type--upper-alpha : #{list.$list-style-type--upper-alpha};
+$list-style-type--lower-alpha : #{list.$list-style-type--lower-alpha};
+$list-style-type--upper-roman : #{list.$list-style-type--upper-roman};
+$list-style-type--lower-roman : #{list.$list-style-type--lower-roman};
+$list-style-type--decimal-leading-zero : #{list.$list-style-type--decimal-leading-zero};
+$list-style-type--lower-greek : #{list.$list-style-type--lower-greek};
+$list-style-type--upper-latin : #{list.$list-style-type--upper-latin};
+$list-style-type--lower-latin : #{list.$list-style-type--lower-latin};
+$list-style-type--hebrew : #{list.$list-style-type--hebrew};
+$list-style-type--armenian : #{list.$list-style-type--armenian};
+$list-style-type--georgian : #{list.$list-style-type--georgian};
+$list-style-type--cjk-ideographic : #{list.$list-style-type--cjk-ideographic};
+$list-style-type--hiragana : #{list.$list-style-type--hiragana};
+$list-style-type--katakana : #{list.$list-style-type--katakana};
+$list-style-type--hiragana-iroha : #{list.$list-style-type--hiragana-iroha};
+$list-style-type--katakana-iroha : #{list.$list-style-type--katakana-iroha};
+
+
+// margin
+$margin--none : #{margin.$margin--none};
+$margin--050 : #{margin.$margin--050};
+$margin--075 : #{margin.$margin--075};
+$margin--100 : #{margin.$margin--100};
+$margin--200 : #{margin.$margin--200};
+$margin--300 : #{margin.$margin--300};
+$margin--400 : #{margin.$margin--400};
+$margin--500 : #{margin.$margin--500};
+$margin--600 : #{margin.$margin--600};
+$margin--700 : #{margin.$margin--700};
+$margin--800 : #{margin.$margin--800};
+$margin--900 : #{margin.$margin--900};
+$margin--1000 : #{margin.$margin--1000};
+
+
+// overflow
+$overflow--visible : #{overflow.$overflow--visible};
+$overflow--hidden : #{overflow.$overflow--hidden};
+$overflow--scroll : #{overflow.$overflow--scroll};
+$overflow--auto : #{overflow.$overflow--auto};
+
+
+// padding
+$padding--none : #{padding.$padding--none};
+$padding--050 : #{padding.$padding--050};
+$padding--075 : #{padding.$padding--075};
+$padding--100 : #{padding.$padding--100};
+$padding--200 : #{padding.$padding--200};
+$padding--300 : #{padding.$padding--300};
+$padding--400 : #{padding.$padding--400};
+$padding--500 : #{padding.$padding--500};
+$padding--600 : #{padding.$padding--600};
+$padding--700 : #{padding.$padding--700};
+$padding--800 : #{padding.$padding--800};
+$padding--900 : #{padding.$padding--900};
+$padding--1000 : #{padding.$padding--1000};
+
+
+// position
+$position--static : #{position.$position--static};
+$position--relative : #{position.$position--relative};
+$position--absolute : #{position.$position--absolute};
+$position--fixed : #{position.$position--fixed};
+
+
+// table
+$border-collapse--collapse : #{table.$border-collapse--collapse};
+$border-collapse--separate : #{table.$border-collapse--separate};
+
+$border-spacing--none : #{table.$border-spacing--none};
+$border-spacing--100 : #{table.$border-spacing--100};
+$border-spacing--200 : #{table.$border-spacing--200};
+$border-spacing--300 : #{table.$border-spacing--300};
+$border-spacing--400 : #{table.$border-spacing--400};
+$border-spacing--500 : #{table.$border-spacing--500};
+$border-spacing--600 : #{table.$border-spacing--600};
+$border-spacing--700 : #{table.$border-spacing--700};
+$border-spacing--800 : #{table.$border-spacing--800};
+$border-spacing--900 : #{table.$border-spacing--900};
+$border-spacing--1000 : #{table.$border-spacing--1000};
+
+$table-layout--auto : #{table.$table-layout--auto};
+$table-layout--fixed : #{table.$table-layout--fixed};
+
+
+// text
+$letter-spacing--none : #{text.$letter-spacing--none};
+$letter-spacing--100 : #{text.$letter-spacing--100};
+$letter-spacing--200 : #{text.$letter-spacing--200};
+$letter-spacing--300 : #{text.$letter-spacing--300};
+$letter-spacing--400 : #{text.$letter-spacing--400};
+$letter-spacing--500 : #{text.$letter-spacing--500};
+$letter-spacing--600 : #{text.$letter-spacing--600};
+$letter-spacing--700 : #{text.$letter-spacing--700};
+$letter-spacing--800 : #{text.$letter-spacing--800};
+$letter-spacing--900 : #{text.$letter-spacing--900};
+$letter-spacing--1000 : #{text.$letter-spacing--1000};
+
+$line-height--100 : #{text.$line-height--100};
+$line-height--200 : #{text.$line-height--200};
+$line-height--300 : #{text.$line-height--300};
+$line-height--400 : #{text.$line-height--400};
+$line-height--500 : #{text.$line-height--500};
+$line-height--600 : #{text.$line-height--600};
+$line-height--700 : #{text.$line-height--700};
+$line-height--800 : #{text.$line-height--800};
+$line-height--900 : #{text.$line-height--900};
+
+$text-align--left : #{text.$text-align--left};
+$text-align--center : #{text.$text-align--center};
+$text-align--right : #{text.$text-align--right};
+$text-align--justify : #{text.$text-align--justify};
+
+$text-decoration--none : #{text.$text-decoration--none};
+$text-decoration--underline : #{text.$text-decoration--underline};
+$text-decoration--overline : #{text.$text-decoration--overline};
+$text-decoration--line-through : #{text.$text-decoration--line-through};
+$text-decoration--blink : #{text.$text-decoration--blink};
+
+$text-indent--default : #{text.$text-indent--default};
+
+$text-transform--none : #{text.$text-transform--none};
+$text-transform--capitalize : #{text.$text-transform--capitalize};
+$text-transform--uppercase : #{text.$text-transform--uppercase};
+$text-transform--lowercase : #{text.$text-transform--lowercase};
+
+$text-wrap--wrap : #{text.$text-wrap--wrap};
+$text-wrap--nowrap : #{text.$text-wrap--nowrap};
+$text-wrap--auto : #{text.$text-wrap--auto};
+$text-wrap--balance : #{text.$text-wrap--balance};
+
+$vertical-align--baseline : #{text.$vertical-align--baseline};
+$vertical-align--top : #{text.$vertical-align--top};
+$vertical-align--middle : #{text.$vertical-align--middle};
+$vertical-align--bottom : #{text.$vertical-align--bottom};
+$vertical-align--text-top : #{text.$vertical-align--text-top};
+$vertical-align--text-bottom : #{text.$vertical-align--text-bottom};
+
+$white-space--normal : #{text.$white-space--normal};
+$white-space--nowrap : #{text.$white-space--nowrap};
+$white-space--pre : #{text.$white-space--pre};
+$white-space--pre-wrap : #{text.$white-space--pre-wrap};
+
+$word-spacing--none : #{text.$word-spacing--none};
+
+
+// transition
+$transition-property--none : #{transition.$transition-property--none};
+$transition-property--all : #{transition.$transition-property--all};
+
+$transition-duration--000 : #{transition.$transition-duration--000};
+$transition-duration--100 : #{transition.$transition-duration--100};
+$transition-duration--200 : #{transition.$transition-duration--200};
+$transition-duration--300 : #{transition.$transition-duration--300};
+$transition-duration--400 : #{transition.$transition-duration--400};
+$transition-duration--500 : #{transition.$transition-duration--500};
+$transition-duration--600 : #{transition.$transition-duration--600};
+$transition-duration--700 : #{transition.$transition-duration--700};
+$transition-duration--800 : #{transition.$transition-duration--800};
+$transition-duration--900 : #{transition.$transition-duration--900};
+$transition-duration--1000 : #{transition.$transition-duration--1000};
+$transition-duration--default : #{transition.$transition-duration--300};
+
+$transition-timing-function--ease : #{transition.$transition-timing-function--ease};
+$transition-timing-function--linear : #{transition.$transition-timing-function--linear};
+$transition-timing-function--ease-in : #{transition.$transition-timing-function--ease-in};
+$transition-timing-function--ease-out : #{transition.$transition-timing-function--ease-out};
+$transition-timing-function--ease-in-out : #{transition.$transition-timing-function--ease-in-out};
+
+$transition-delay--000 : #{transition.$transition-delay--000};
+$transition-delay--100 : #{transition.$transition-delay--100};
+$transition-delay--200 : #{transition.$transition-delay--200};
+$transition-delay--300 : #{transition.$transition-delay--300};
+$transition-delay--400 : #{transition.$transition-delay--400};
+$transition-delay--500 : #{transition.$transition-delay--500};
+$transition-delay--600 : #{transition.$transition-delay--600};
+$transition-delay--700 : #{transition.$transition-delay--700};
+$transition-delay--800 : #{transition.$transition-delay--800};
+$transition-delay--900 : #{transition.$transition-delay--900};
+$transition-delay--1000 : #{transition.$transition-delay--1000};
+
+
+// visibility
+$visibility--visible : #{visibility.$visibility--visible};
+$visibility--hidden : #{visibility.$visibility--hidden};
+$visibility--collapse : #{visibility.$visibility--collapse};
+
+
+// z-index
+$z-index--auto : #{z-index.$z-index--auto};
+$z-index--100 : #{z-index.$z-index--100};
+$z-index--200 : #{z-index.$z-index--200};
+$z-index--300 : #{z-index.$z-index--300};
+$z-index--400 : #{z-index.$z-index--400};
+$z-index--500 : #{z-index.$z-index--500};
+$z-index--600 : #{z-index.$z-index--600};
+$z-index--700 : #{z-index.$z-index--700};
+$z-index--800 : #{z-index.$z-index--800};
+$z-index--900 : #{z-index.$z-index--900};
+$z-index--1000 : #{z-index.$z-index--1000};

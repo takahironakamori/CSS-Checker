@@ -1,0 +1,46 @@
+/**
+ * 命名ルール
+ * CSSのプロパティ名 + バリエーション + パターン
+ * 例
+ */
+
+$font-family--sans : "Noto Sans JP", sans-serif;
+$font-family--serif : "Noto Serif JP", serif;
+$font-family--code : "Source Code Pro", "Noto Sans JP", serif;
+
+$font-size--050 : 11px;
+$font-size--075 : 12px;
+$font-size--100 : 14px;
+$font-size--200 : 16px;
+$font-size--300 : 18px;
+$font-size--400 : 20px;
+$font-size--500 : 22px;
+$font-size--600 : 25px;
+$font-size--700 : 28px;
+$font-size--800 : 32px;
+$font-size--900 : 36px;
+$font-size--1000 : 40px;
+$font-size--1100 : 45px;
+$font-size--1200 : 50px;
+$font-size--1300 : 60px;
+
+$font-weight--thin: 100;
+$font-weight--extra-light: 200;
+$font-weight--light: 300;
+$font-weight--regular : 400;
+$font-weight--medium : 500;
+$font-weight--semi-bold : 600;
+$font-weight--bold : 700;
+$font-weight--extra-bold : 800;
+$font-weight--black : 900;
+
+$font-style--italic : italic;
+$font-style--default : normal;
+
+$webkit-font-smoothing--none : none;
+$webkit-font-smoothing--antialiased : antialiased;
+$webkit-font-smoothing--subpixel-antialiased : subpixel-antialiased;
+$moz-osx-font-smoothing--grayscal : grayscale;
+
+$font-feature-settings--default : initial;
+$font-feature-settings--palt : "'palt' 1";

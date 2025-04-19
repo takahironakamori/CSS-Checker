@@ -1,0 +1,269 @@
+@use '../tokens/aliases/common' as common;
+
+:root {
+  // background
+  --background-attachment--scroll : #{common.$background-attachment--scroll};
+  --background-attachment--fixed : #{common.$background-attachment--fixed};
+
+  --background-repeat--repeat : #{common.$background-repeat--repeat};
+  --background-repeat--repeat-x : #{common.$background-repeat--repeat-x};
+  --background-repeat--repeat-y : #{common.$background-repeat--repeat-y};
+  --background-repeat--no-repeat : #{common.$background-repeat--no-repeat};
+
+
+  // block-link
+  --block-link--display--block : #{common.$display--block};
+  --block-link--transition--default: #{common.$transition-property--all} #{common.$transition-duration--default} #{common.$transition-timing-function--ease};
+
+  // button
+  --button--padding--default : #{common.$padding--100} #{common.$padding--300};
+  --button--border-radius--default : #{common.$border-radius--full};
+  --button--transition--default: #{common.$transition-property--all} #{common.$transition-duration--default} #{common.$transition-timing-function--ease};
+
+  --button--icon--padding--default : #{common.$padding--100} #{common.$padding--100} #{common.$padding--100} #{common.$padding--100};
+  --button--label--button--icon--padding--default : #{common.$padding--100} #{common.$padding--300} #{common.$padding--100} #{common.$padding--200};
+  --button--icon--font-weight: #{common.$font-weight--bold};
+
+
+  // border
+  --border-style--solid : #{common.$border-style--solid};
+  --border-style--dotted : #{common.$border-style--dotted};
+  --border-style--dashed : #{common.$border-style--dashed};
+
+  --border-radius--default : #{common.$border-radius--200};
+  --border-radius--small : #{common.$border-radius--100};
+  --border-radius--full : #{common.$border-radius--full};
+
+  --border-width--default : #{common.$border-width--100};
+  --border-width--bold : #{common.$border-width--200};
+  --border-width--extra-bold : #{common.$border-width--400};
+
+
+  // box-sizing
+  --box-sizing--border-box: #{common.$box-sizing--border-box};
+  --box-sizing--content-box : #{common.$box-sizing--content-box};
+
+
+  // font-family
+  --font-family--sans: #{common.$font-family--sans};
+  --font-family--serif: #{common.$font-family--serif};
+  --font-family--code: #{common.$font-family--code};
+  --font-family--default : var(--font-family--sans);
+
+
+  // display
+  --display--inline : #{common.$display--inline};
+  --display--block : #{common.$display--block};
+  --display--inline-block : #{common.$display--inline-block};
+  --display--list-item : #{common.$display--list-item};
+  --display--none : #{common.$display--none};
+  --display--flex : #{common.$display--flex};
+  --display--grid : #{common.$display--grid};
+
+
+  --gap--none : #{common.$gap--none};
+  --gap--050 : #{common.$gap--050};
+  --gap--075 : #{common.$gap--075};
+  --gap--100 : #{common.$gap--100};
+  --gap--200 : #{common.$gap--200};
+  --gap--300 : #{common.$gap--300};
+  --gap--400 : #{common.$gap--400};
+  --gap--500 : #{common.$gap--500};
+  --gap--600 : #{common.$gap--600};
+  --gap--700 : #{common.$gap--700};
+  --gap--800 : #{common.$gap--800};
+  --gap--900 : #{common.$gap--900};
+  --gap--1000 : #{common.$gap--1000};
+
+
+  // font-feature-setting
+  --font-feature-settings--default : #{common.$font-feature-settings--default};
+  --font-feature-settings--palt : #{common.$font-feature-settings--palt};
+
+
+  // font-size
+  --font-size--xxs: #{common.$font-size--050};
+  --font-size--xs: #{common.$font-size--075};
+  --font-size--s: #{common.$font-size--100};
+  --font-size--default: #{common.$font-size--200};
+  --font-size--m: #{common.$font-size--300};
+  --font-size--l: #{common.$font-size--500};
+  --font-size--xl: #{common.$font-size--700};
+  --font-size--xxl: #{common.$font-size--900};
+  --font-size--xxxl: #{common.$font-size--1100};
+
+
+  // font-style
+  --font-style--default : #{common.$font-style--default};
+  --font-style--italic : #{common.$font-style--italic};
+
+
+  // font-smoothing
+  --webkit-font-smoothing--none : #{common.$webkit-font-smoothing--none};
+  --webkit-font-smoothing--antialiased : #{common.$webkit-font-smoothing--antialiased};
+  --webkit-font-smoothing--subpixel-antialiased : #{common.$webkit-font-smoothing--subpixel-antialiased};
+  --moz-osx-font-smoothing--grayscal : #{common.$moz-osx-font-smoothing--grayscal};
+
+  --font-feature-settings--default : #{common.$font-feature-settings--default};
+  --font-feature-settings--palt : #{common.$font-feature-settings--palt};
+
+
+  // font-weight
+  --font-weight--thin: #{common.$font-weight--thin};
+  --font-weight--extra-light: #{common.$font-weight--extra-light};
+  --font-weight--light: #{common.$font-weight--light};
+  --font-weight--default : #{common.$font-weight--regular};
+  --font-weight--medium : #{common.$font-weight--medium};
+  --font-weight--semi-bold : #{common.$font-weight--semi-bold};
+  --font-weight--bold : #{common.$font-weight--bold};
+  --font-weight--extra-bold : #{common.$font-weight--extra-bold};
+  --font-weight--black : #{common.$font-weight--black};
+
+
+  // icon-link
+  --icon-link--transition--default: #{common.$transition-property--all} #{common.$transition-duration--default} #{common.$transition-timing-function--ease};
+
+
+  // letter-spacing
+  --letter-spacing--default : #{common.$letter-spacing--none};
+  --letter-spacing--100 : #{common.$letter-spacing--100};
+  --letter-spacing--200 : #{common.$letter-spacing--200};
+  --letter-spacing--300 : #{common.$letter-spacing--300};
+  --letter-spacing--400 : #{common.$letter-spacing--400};
+  --letter-spacing--500 : #{common.$letter-spacing--500};
+  --letter-spacing--600 : #{common.$letter-spacing--600};
+  --letter-spacing--700 : #{common.$letter-spacing--700};
+  --letter-spacing--800 : #{common.$letter-spacing--800};
+  --letter-spacing--900 : #{common.$letter-spacing--900};
+  --letter-spacing--1000 : #{common.$letter-spacing--1000};
+
+
+  // line-height
+  --line-height--xxs : #{common.$line-height--100};
+  --line-height--xs : #{common.$line-height--200};
+  --line-height--s : #{common.$line-height--300};
+  --line-height--default : #{common.$line-height--400};
+  --line-height--m : #{common.$line-height--500};
+  --line-height--l : #{common.$line-height--600};
+  --line-height--xl : #{common.$line-height--700};
+  --line-height--xxl : #{common.$line-height--800};
+  --line-height--xxxl : #{common.$line-height--900};
+
+
+  // link
+  --link--transition--default: #{common.$transition-property--all} #{common.$transition-duration--default} #{common.$transition-timing-function--ease};
+
+
+  // list
+  --list-style-type--none : #{common.$list-style-type--none};
+  --list-style-type--disc : #{common.$list-style-type--disc};
+  --list-style-type--circle : #{common.$list-style-type--circle};
+  --list-style-type--square : #{common.$list-style-type--square};
+  --list-style-type--decimal : #{common.$list-style-type--decimal};
+  --list-style-type--upper-alpha : #{common.$list-style-type--upper-alpha};
+  --list-style-type--lower-alpha : #{common.$list-style-type--lower-alpha};
+  --list-style-type--upper-roman : #{common.$list-style-type--upper-roman};
+  --list-style-type--lower-roman : #{common.$list-style-type--lower-roman};
+  --list-style-type--decimal-leading-zero : #{common.$list-style-type--decimal-leading-zero};
+  --list-style-type--lower-greek : #{common.$list-style-type--lower-greek};
+  --list-style-type--upper-latin : #{common.$list-style-type--upper-latin};
+  --list-style-type--lower-latin : #{common.$list-style-type--lower-latin};
+  --list-style-type--hebrew : #{common.$list-style-type--hebrew};
+  --list-style-type--armenian : #{common.$list-style-type--armenian};
+  --list-style-type--georgian : #{common.$list-style-type--georgian};
+  --list-style-type--cjk-ideographic : #{common.$list-style-type--cjk-ideographic};
+  --list-style-type--hiragana : #{common.$list-style-type--hiragana};
+  --list-style-type--katakana : #{common.$list-style-type--katakana};
+  --list-style-type--hiragana-iroha : #{common.$list-style-type--hiragana-iroha};
+  --list-style-type--katakana-iroha : #{common.$list-style-type--katakana-iroha};
+
+
+  // margin
+  --margin--none : #{common.$margin--none};
+  --margin--050 : #{common.$margin--050};
+  --margin--075 : #{common.$margin--075};
+  --margin--100 : #{common.$margin--100};
+  --margin--200 : #{common.$margin--200};
+  --margin--300 : #{common.$margin--300};
+  --margin--400 : #{common.$margin--400};
+  --margin--500 : #{common.$margin--500};
+  --margin--600 : #{common.$margin--600};
+  --margin--700 : #{common.$margin--700};
+  --margin--800 : #{common.$margin--800};
+  --margin--900 : #{common.$margin--900};
+  --margin--1000 : #{common.$margin--1000};
+
+
+  // padding
+  --padding--none : #{common.$padding--none};
+  --padding--050 : #{common.$padding--050};
+  --padding--075 : #{common.$padding--075};
+  --padding--100 : #{common.$padding--100};
+  --padding--200 : #{common.$padding--200};
+  --padding--300 : #{common.$padding--300};
+  --padding--400 : #{common.$padding--400};
+  --padding--500 : #{common.$padding--500};
+  --padding--600 : #{common.$padding--600};
+  --padding--700 : #{common.$padding--700};
+  --padding--800 : #{common.$padding--800};
+  --padding--900 : #{common.$padding--900};
+  --padding--1000 : #{common.$padding--1000};
+
+
+  --text-align--left : #{common.$text-align--left};
+  --text-align--center : #{common.$text-align--center};
+  --text-align--right : #{common.$text-align--right};
+  --text-align--justify : #{common.$text-align--justify};
+
+  --text-wrap--wrap : #{common.$text-wrap--wrap};
+  --text-wrap--nowrap : #{common.$text-wrap--nowrap};
+  --text-wrap--auto : #{common.$text-wrap--auto};
+  --text-wrap--balance : #{common.$text-wrap--balance};
+
+  --vertical-align--baseline : #{common.$vertical-align--baseline};
+  --vertical-align--top : #{common.$vertical-align--top};
+  --vertical-align--middle : #{common.$vertical-align--middle};
+  --vertical-align--bottom : #{common.$vertical-align--bottom};
+  --vertical-align--text-top : #{common.$vertical-align--text-top};
+  --vertical-align--text-bottom : #{common.$vertical-align--text-bottom};
+
+  --white-space--normal : #{common.$white-space--normal};
+  --white-space--nowrap : #{common.$white-space--nowrap};
+  --white-space--pre : #{common.$white-space--pre};
+  --white-space--pre-wrap : #{common.$white-space--pre-wrap};
+
+  // transition
+  --transition-property--none : #{common.$transition-property--none};
+  --transition-property--all : #{common.$transition-property--all};
+
+  --transition-duration--000 : #{common.$transition-duration--000};
+  --transition-duration--100 : #{common.$transition-duration--100};
+  --transition-duration--200 : #{common.$transition-duration--200};
+  --transition-duration--300 : #{common.$transition-duration--300};
+  --transition-duration--400 : #{common.$transition-duration--400};
+  --transition-duration--500 : #{common.$transition-duration--500};
+  --transition-duration--600 : #{common.$transition-duration--600};
+  --transition-duration--700 : #{common.$transition-duration--700};
+  --transition-duration--800 : #{common.$transition-duration--800};
+  --transition-duration--900 : #{common.$transition-duration--900};
+  --transition-duration--1000 : #{common.$transition-duration--1000};
+
+  --transition-timing-function--ease : #{common.$transition-timing-function--ease};
+  --transition-timing-function--linear : #{common.$transition-timing-function--linear};
+  --transition-timing-function--ease-in : #{common.$transition-timing-function--ease-in};
+  --transition-timing-function--ease-out : #{common.$transition-timing-function--ease-out};
+  --transition-timing-function--ease-in-out : #{common.$transition-timing-function--ease-in-out};
+
+  --transition-delay--000 : #{common.$transition-delay--000};
+  --transition-delay--100 : #{common.$transition-delay--100};
+  --transition-delay--200 : #{common.$transition-delay--200};
+  --transition-delay--300 : #{common.$transition-delay--300};
+  --transition-delay--400 : #{common.$transition-delay--400};
+  --transition-delay--500 : #{common.$transition-delay--500};
+  --transition-delay--600 : #{common.$transition-delay--600};
+  --transition-delay--700 : #{common.$transition-delay--700};
+  --transition-delay--800 : #{common.$transition-delay--800};
+  --transition-delay--900 : #{common.$transition-delay--900};
+  --transition-delay--1000 : #{common.$transition-delay--1000};
+
+}
