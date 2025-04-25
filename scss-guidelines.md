@@ -71,7 +71,53 @@
 - 管理画面のタブの別バージョン : `admin--tab--A01`
 - お問い合わせフォームの重要なボタン : `contact-form__button--primary`
 
-### ラベルバリエーション
+
+#### pattern : パターンバリエーション
+
+- 特定の意味を持たせず、デザインの違いだけを区別するためのバリエーションは `--A01`, `--A02` のように命名します。このような記号的バリエーションを **パターンバリエーション** と呼びます。
+- 明確な意味を持つ場合は --primary などのラベル付きバリエーションを使います。
+
+```scss
+.button--A01 {} // デザインパターン1
+.button--A02 {} // デザインパターン2
+```
+
+
+#### style : スタイルバリエーション
+
+- 見た目を変更するバリエーション
+
+```scss
+.button--fill {} // 塗りつぶしのボタン
+.button--outline {} // 枠線だけのボタン
+```
+
+
+#### size : サイズバリエーション
+
+- 大きさを指定するバリエーション
+- ボタンや要素のサイズバリエーションは、命名が長くなりすぎないように **省略表記（略称）を使って統一**します。
+- 以下は、推奨されるサイズ略称と、使用を避けるべきフル表記の例です。
+
+| サイズ | 推奨略称（正しい） | 使用不可の例（誤り） |
+|--------|--------------------|-----------------------|
+| extra-extra-small | `xxs` | `extra-extra-small` |
+| extra-small | `xs` | `extra-small` |
+| small        | `s`  | `small` |
+| medium       | `m`  | `medium` |
+| large        | `l`  | `large` |
+| extra-large  | `xl` | `extra-large` |
+| extra-extra-large | `xxl` | `extra-extra-large` |
+
+```scss
+.button--fill--s {}
+.button--fill--m {}
+.button--fill--l {}
+.button--fill--xl {}
+.button--fill--xxl {}
+```
+
+#### label : ラベルバリエーション
 
 - 特定の意味や状態を示す、ラベル名を持つバリエーションで以下があります。
 
@@ -89,26 +135,18 @@
 フィードバック的要素： positive, notice, negative<br>
 視覚の補助要素： accent
 
+#### バリエーションが複数ある場合
 
-### パターンバリエーション
+- クラス名は、以下の順番で variation をつけて記述します。
+- 順番：`block--[pattern]--[style]--[size]--[label]`
+- 必須ではなく、必要な variation だけを順番通りに追加してください。
 
-- 特定の意味を持たせず、デザインの違いだけを区別するためのバリエーションは `--A01`, `--A02` のように命名します。このような記号的バリエーションを **パターンバリエーション** と呼びます。
-- 明確な意味を持つ場合は --primary などのラベル付きバリエーションを使います。
-
-#### 例
+#### 使用例
 
 ```scss
-.card--A01 {} // デザインパターン1
-.card--A02 {} // デザインパターン2
-```
-
-### バリエーションが複数ある場合
-
-- `block--[id]--[style]--[size]--[color]` の順で記述します。
-
-- `[style]`: ボタンの構造（fill / outline）
-- `[size]`: サイズ（small / medium / large / extra-large）
-- `[color]`: カラーバリエーション（primary / secondary / positive / etc）
+.button--A01--fill--m--primary {}
+.button--fill--xl--positive {}
+.card--A02--outline--s {}
 
 ### modifier(状態)
 
