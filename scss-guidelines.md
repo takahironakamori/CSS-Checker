@@ -147,6 +147,7 @@
 .button--A01--fill--m--primary {}
 .button--fill--xl--positive {}
 .card--A02--outline--s {}
+```
 
 ### modifier(状態)
 
