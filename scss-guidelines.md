@@ -47,17 +47,6 @@
 | `--tabs` | `--tab-group` |
 | `--items` | `--list` |
 
-### element(構成要素)
-
-- コンポーネントを構成する要素を element と使用できます。
-- element は入れ子にすることができます。
-- element のネスト階層は2階層以内（`__`を使うのは2回まで）が理想だが、明確な意味があり、読みやすさ・保守性に問題がなければ3階層以上も許容します。
-
-#### 例
-
-- 管理画面のタブのラベル : `admin-tab__label`
-- ヘッダのロゴ : `header__logo`
-- ヘッダーのロゴの画像 : `header__logo__img`
 
 ### variation(バリエーション)
 
@@ -138,16 +127,28 @@
 #### バリエーションが複数ある場合
 
 - クラス名は、以下の順番で variation をつけて記述します。
-- 順番：`block--[pattern]--[style]--[size]--[label]`
-- 必須ではなく、必要な variation だけを順番通りに追加してください。
+- バリエーションが複数ある場合は、バリエーションごとにクラスを分離して定義・使用する方式を原則とします。
+- 順番：`block--[pattern]` `block--[style]` `block--[size]` `block--[label]`
 
 #### 使用例
 
-```scss
-.button--A01--fill--m--primary {}
-.button--fill--xl--positive {}
-.card--A02--outline--s {}
-```
+| バリエーション | 正しい使用例 | 誤りの使用例 |
+|--------------------|--------------------|-----------------------|
+| `A01`, `fill`, `m`, `primary` | `button--A01`<br> `button--fill`<br> `button--m` <br> `button--primary` | `button--A01--fill--m--primary` |
+
+
+### element(構成要素)
+
+- コンポーネントを構成する要素を element と使用できます。
+- element は入れ子にすることができます。
+- element のネスト階層は2階層以内（`__`を使うのは2回まで）が理想だが、明確な意味があり、読みやすさ・保守性に問題がなければ3階層以上も許容します。
+
+#### 例
+
+- 管理画面のタブのラベル : `admin-tab__label`
+- ヘッダのロゴ : `header__logo`
+- ヘッダーのロゴの画像 : `header__logo__img`
+
 
 ### modifier(状態)
 
