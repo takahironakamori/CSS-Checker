@@ -10,15 +10,11 @@
 
 ```
 .prefix--block {}
-.prefix--block-variation {}
+.prefix--block--variation {}
 .prefix--block__element {}
 .prefix--block--variation__element {}
-.prefix--block --modifier {}
-.prefix--block--variation --modifier {}
-.prefix--block__element --modifier {}
-.prefix--block__element--variation --modifier {}
-.prefix--block--variation__element --modifier {}
-.prefix--block--variation__element--variation --modifier {}
+.prefix--block__element--variation {}
+.prefix--block--variation__element--variation {}
 ```
 
 ### prefix（接頭辞）
@@ -74,6 +70,45 @@
 
 - 管理画面のタブの別バージョン : `admin--tab--A01`
 - お問い合わせフォームの重要なボタン : `contact-form__button--primary`
+
+### ラベルバリエーション
+
+- 特定の意味や状態を示す、ラベル名を持つバリエーションで以下があります。
+
+| ラベルバリエーション | 推奨用途                            | イメージ                         | 対象アクションの例                     |
+|----------------------|-------------------------------------|----------------------------------|----------------------------------------|
+| `--primary`          | 最重要アクション・ページで1つだけ  | ブランドカラー or 強調されたボタン | フォームの送信 / 次へ進む / 購入する     |
+| `--secondary`        | 補助的なアクション（primaryの次に大事） | 落ち着いたカラー / 控えめ         | 戻る / キャンセル / 編集する           |
+| `--info`             | 情報の提示や通知                    | 青系カラーで冷静・中立           | 詳細を見る / お知らせ / チュートリアル開始 |
+| `--positive`         | 成功・完了など良い結果を強調        | 緑系 / 明るい安心感              | 保存成功 / 完了 / 有効化する            |
+| `--notice`           | 注意喚起・軽い警告                  | オレンジ・黄色系で目を引く       | 一部未入力 / 古いデータの確認 / 下書き保存 |
+| `--negative`         | 否定・削除・注意の必要なアクション   | 赤系 / 危険・緊急を連想          | 削除 / 退会 / キャンセル確認            |
+| `--accent`           | 装飾的・強調目的（機能的ではない）   | 補助カラー / アクセント的使い方   | フィルタータグ / ラベル表示 / 特別扱い要素 |
+
+- ユーザーの行動を誘導する強さ順に： primary > secondary > info / positive<br>
+フィードバック的要素： positive, notice, negative<br>
+視覚の補助要素： accent
+
+
+### パターンバリエーション
+
+- 特定の意味を持たせず、デザインの違いだけを区別するためのバリエーションは `--A01`, `--A02` のように命名します。このような記号的バリエーションを **パターンバリエーション** と呼びます。
+- 明確な意味を持つ場合は --primary などのラベル付きバリエーションを使います。
+
+#### 例
+
+```scss
+.card--A01 {} // デザインパターン1
+.card--A02 {} // デザインパターン2
+```
+
+### バリエーションが複数ある場合
+
+- `block--[id]--[style]--[size]--[color]` の順で記述します。
+
+- `[style]`: ボタンの構造（fill / outline）
+- `[size]`: サイズ（small / medium / large / extra-large）
+- `[color]`: カラーバリエーション（primary / secondary / positive / etc）
 
 ### modifier(状態)
 
@@ -148,6 +183,17 @@
 | `--hover` | `--hovered`, `--is-hover` |
 
 ---
+
+### utility(例外処理)
+
+- utility を使用して例外的に表示を変更することができます。
+- utility は、必ず "u--" で始まり、基本構造は u--block--variation です。
+- utility は必ず別のクラスとして使用します（半角スペースで区切ってください）。
+- 同時に複数の utility を使用することができます。
+
+#### 例
+
+- 段落の余白（下）を大きくする : `paragraph--m n--mb--l`
 
 ## SCSS構造とファイル分割
 
