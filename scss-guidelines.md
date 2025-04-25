@@ -134,7 +134,7 @@
 
 | バリエーション | 正しい使用例 | 誤りの使用例 |
 |--------------------|--------------------|-----------------------|
-| `A01`, `fill`, `m`, `primary` | `button--A01`<br> `button--fill`<br> `button--m` <br> `button--primary` | `button--A01--fill--m--primary` |
+| `A01`, `fill`, `m`, `primary` | `button--A01` `button--fill` `button--m` `button--primary` | `button--A01--fill--m--primary` |
 
 
 ### element(構成要素)
