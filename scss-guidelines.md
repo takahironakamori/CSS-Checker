@@ -75,6 +75,7 @@
 #### style : スタイルバリエーション
 
 - 見た目を変更するバリエーション
+- スタイルバリエーションは、命名が長くなりすぎないように特定の表記については **省略表記（略称）を使って統一**します(下記、「省略表記していいもの」、「省略表記できないもの」参照)。
 
 ```scss
 .button--fill {} // 塗りつぶしのボタン
@@ -85,30 +86,19 @@
 #### size : サイズバリエーション
 
 - 大きさを指定するバリエーション
-- ボタンや要素のサイズバリエーションは、命名が長くなりすぎないように **省略表記（略称）を使って統一**します。
-- 以下は、推奨されるサイズ略称と、使用を避けるべきフル表記の例です。
-
-| サイズ | 推奨略称（正しい） | 使用不可の例（誤り） |
-|--------|--------------------|-----------------------|
-| extra-extra-small | `xxs` | `extra-extra-small` |
-| extra-small | `xs` | `extra-small` |
-| small        | `s`  | `small` |
-| medium       | `m`  | `medium` |
-| large        | `l`  | `large` |
-| extra-large  | `xl` | `extra-large` |
-| extra-extra-large | `xxl` | `extra-extra-large` |
+- ボタンや要素のサイズバリエーションは、命名が長くなりすぎないように **省略表記（略称）を使って統一**します(下記、「省略表記していいもの」、「省略表記できないもの」参照)。
 
 ```scss
-.button--fill--s {}
-.button--fill--m {}
-.button--fill--l {}
-.button--fill--xl {}
-.button--fill--xxl {}
+.button--s {}
+.button--m {}
+.button--l {}
+.button--xl {}
+.button--xxl {}
 ```
 
-#### label : ラベルバリエーション
+#### intent : インテントバリエーション
 
-- 特定の意味や状態を示す、ラベル名を持つバリエーションで以下があります。
+- 特定の意味を示す名称を持つバリエーションで、以下があります。
 
 | ラベルバリエーション | 推奨用途                            | イメージ                         | 対象アクションの例                     |
 |----------------------|-------------------------------------|----------------------------------|----------------------------------------|
@@ -128,13 +118,13 @@
 
 - クラス名は、以下の順番で variation をつけて記述します。
 - バリエーションが複数ある場合は、バリエーションごとにクラスを分離して定義・使用する方式を原則とします。
-- 順番：`block--[pattern]` `block--[style]` `block--[size]` `block--[label]`
+- 順番：`block` `block--[pattern]` `block--[style]` `block--[size]` `block--[intent]`
 
 #### 使用例
 
 | バリエーション | 正しい使用例 | 誤りの使用例 |
 |--------------------|--------------------|-----------------------|
-| `A01`, `fill`, `m`, `primary` | `button--A01` `button--fill` `button--m` `button--primary` | `button--A01--fill--m--primary` |
+| `A01`, `fill`, `m`, `primary` | `button` `button--A01` `button--fill` `button--m` `button--primary` | `button--A01--fill--m--primary` |
 
 
 ### element(構成要素)
@@ -244,9 +234,15 @@
   │   ├── app.scss              ... アプリ全体で使用する scss。
   │   └── [page_name].scss      ... ページ個別で使用する scss（例:home, category, single, login, page）。
   ├── components                ... コンポーネント別の scss。値は themes ディレクトリ内で指定しているものしか使えない。
-  │   ├── ui                    ... UIパーツ別の scss。
-  │   │   └── [ui_name].scss    ... UIパーツのCSS。Headless UI の scss（例:tab, dialog, dropdown, button）。
-  │   └── [component_name].scss ... コンポーネント個別で使用する scss（例:header, footer, card, appNav）。
+  │   ├── designToken           ... Design Token別の scss。
+  │   │   ├── designToken.scss  ... Primitive Component が読み込むファイル。Design Token内の scss を読み込む。
+  │   │   ├── border.scss       ... ボーターに関する定義。
+  │   │   ├── color.scss        ... 色 に関する定義。
+  │   │   └── typography.scss   ... 文字 に関する定義。
+  │   ├── primitive             ... Primitive Component別の scss。
+  │   │   └── [component_name].scss ... Primitive Component の scss（例:paragraph）。
+  │   ├── semantic              ... Semantic Component別の scss。
+  │   │   └── [component_name].scss ... Semantic Component の scss（例:header）。
   ├── themes                    ... テーマ用 scss。
   │   ├── _common.scss          ... テーマ共通 scss。
   │   ├── _dark.scss            ... ダークカラーテーマ用 scss。
@@ -308,6 +304,50 @@
   background: var(--background-color--default);
 }
 ```
+
+---
+
+## 省略表記していいもの
+
+### 位置
+
+| 位置 | 推奨略称（正しい） | 使用不可の例（誤り） |
+|--------|--------------------|-----------------------|
+| all(top, bottom, left, right) | `a` | `all`        |
+| vertical                      | `v` | `vertical`   |
+| horizontal                    | `h` | `horizontal` |
+| top                           | `t` | `top`        |
+| bottom                        | `b` | `b`          |
+| left                          | `l` | `left`       |
+| right                         | `r` | `right`      |
+
+### サイズ
+
+| サイズ | 推奨略称（正しい） | 使用不可の例（誤り） |
+|--------|--------------------|-----------------------|
+| extra-extra-small | `xxs` | `extra-extra-small` |
+| extra-small       | `xs`  | `extra-small`       |
+| small             | `s`   | `small`             |
+| medium            | `m`   | `medium`            |
+| large             | `l`   | `large`             |
+| extra-large       | `xl`  | `extra-large`       |
+| extra-extra-large | `xxl` | `extra-extra-large` |
+
+## 省略表記できないものの例
+
+### ウェイト
+
+| ウェイト | 推奨名称（正しい） | 使用不可の例（誤り） |
+|--------|--------------------|-----------------------|
+| thin        | `thin`        | `t`  |
+| extra-light | `extra-light` | `el` |
+| light       | `light`       | `l`  |
+| regular     | `regular`     | `r`  |
+| medium      | `medium`      | `m`  |
+| semi-bold   | `semi-bold`   | `sb` |
+| bold        | `bold`        | `b`  |
+| extra-bold  | `extra-bold`  | `eb` |
+| black       | `black`       | `b`  |
 
 ---
 
