@@ -306,6 +306,111 @@
 
 ---
 
+## スタイルのプロパティの書き順
+
+プロパティを以下のような大きなカテゴリで分けて、基本この順番で書きます。
+
+### 1.　レイアウト・表示設定
+
+- `display`
+- `visibility`
+- `position`
+- `top`, `right`, `bottom`, `left`
+- `z-index`
+
+### 2.フレックス・グリッド系
+
+- `flex`
+- `flex-grow`, `flex-shrink`, `flex-basic`
+- `justify-content`
+- `align-items`
+- `align-self`
+- `grid-template-columns`
+- `grid-template-rows`
+- `gap`
+- `row-gap`, `column-gap`
+
+### 3.サイズ・ボックスモデル
+
+- `box-sizing`
+- `width`
+- `min-width`, `max-width`
+- `height`
+- `min-height`, `max-height`
+- `margin`
+- `padding`
+- `overflow`, `overflow-x`, `overflow-y`
+
+### 4.ボーダー・背景・シャドウ
+
+- `border`
+- `border-width`, `border-style`, `border-color`
+- `border-radius`
+- `background`
+- `background-color`
+- `background-image`
+- `box-shadow`
+
+### 5.テキスト・フォント設定
+
+- `font`
+- `font-size`
+- `font-weight`
+- `font-family`
+- `line-height`
+- `letter-spacing`
+- `color`
+- `text-align`
+- `text-decoration`
+- `text-transform`
+
+### 6.その他の視覚効果
+
+- `opacity`
+- `transform`
+- `transition`
+- `animation`
+
+### 例
+```css
+* {
+  // --- Layout ---
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  // --- Flex/Grid ---
+  justify-content: center;
+  align-items: center;
+
+  // --- Size/Box Model ---
+  width: 100%;
+  padding: 16px;
+  margin: 0 auto;
+
+  // --- Border/Background/Shadow ---
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  // --- Typography ---
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+
+  // --- Visual Effects ---
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+```
+
+---
+
 ## 省略表記していいもの
 
 ### 位置
