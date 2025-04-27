@@ -399,6 +399,7 @@
   // --- Typography ---
   font-size: 1rem;
   font-weight: bold;
+  line-height: 1.0;
   color: #333;
   text-align: center;
 
