@@ -332,13 +332,13 @@
 
 ### 3.サイズ・ボックスモデル
 
-- `box-sizing`
 - `width`
 - `min-width`, `max-width`
 - `height`
 - `min-height`, `max-height`
 - `margin`
 - `padding`
+- `box-sizing`
 - `overflow`, `overflow-x`, `overflow-y`
 
 ### 4.ボーダー・背景・シャドウ
