@@ -234,8 +234,8 @@
   │   ├── app.scss              ... アプリ全体で使用する scss。
   │   └── [page_name].scss      ... ページ個別で使用する scss（例:home, category, single, login, page）。
   ├── components                ... コンポーネント別の scss。値は themes ディレクトリ内で指定しているものしか使えない。
-  │   ├── designToken           ... Design Token別の scss。
-  │   │   ├── designToken.scss  ... Primitive Component が読み込むファイル。Design Token内の scss を読み込む。
+  │   ├── designToken           ... Design Token別の scss（Theme に該当する部分）。
+  │   │   ├── designToken.scss  ... Primitive Component が読み込むファイル。Design Token内の scss を束ねる。
   │   │   ├── border.scss       ... ボーターに関する定義。
   │   │   ├── color.scss        ... 色 に関する定義。
   │   │   └── typography.scss   ... 文字 に関する定義。
@@ -243,17 +243,16 @@
   │   │   └── [component_name].scss ... Primitive Component の scss（例:paragraph）。
   │   ├── semantic              ... Semantic Component別の scss。
   │   │   └── [component_name].scss ... Semantic Component の scss（例:header）。
-  ├── themes                    ... テーマ用 scss。
-  │   ├── _common.scss          ... テーマ共通 scss。
-  │   ├── _dark.scss            ... ダークカラーテーマ用 scss。
-  │   ├── _light.scss           ... 標準カラーテーマ用 scss。
-  │   └── _themes.scss          ... app.scss が読み込むファイル。すべてのテーマ用CSSを束ねる。
   └── tokens                    ... cssの値を指定している scss。
+      ├── schemes               ... Design Tokenと接続するための scss。
+      │   ├── _schemes.scss     ... designToken内のファイル が読み込むファイル。_common,_dark,_lightを束ねる。
+      │   ├── _common.scss      ... 共通部分の scss。
+      │   ├── _dark.scss        ... ダークカラーテーマ用 scss。
+      │   └── _light.scss       ... 標準カラーテーマ用 scss。
       ├── aliases
       │   ├── _common.scss      ... values/color 以外の values 内の scss を束ねる。
-      │   ├── _dark.scss        ... ダークカラーテーマ用の色に関する scss を束ねる。 
-      │   ├── _light.scss       ... 標準カラーテーマ用の色に関する scss を束ねる。  
-      │   └── _static.scss      ... 固定カラーテーマ用の色に関する scss を束ねる。  
+      │   ├── _dark.scss        ... ダークカラーテーマ用の色に関する scss を束ねる。  
+      │   └── _light.scss       ... 標準カラーテーマ用の色に関する scss を束ねる。  
       └── values
           ├── color             ... 色に関する値を指定する。
           │   ├── _dark.scss    ... ダークカラーテーマ用の色の値を指定する scss。 
@@ -316,10 +315,7 @@
 | all(top, bottom, left, right) | `a` | `all`        |
 | vertical                      | `v` | `vertical`   |
 | horizontal                    | `h` | `horizontal` |
-| top                           | `t` | `top`        |
-| bottom                        | `b` | `b`          |
-| left                          | `l` | `left`       |
-| right                         | `r` | `right`      |
+
 
 ### サイズ
 
@@ -334,6 +330,15 @@
 | extra-extra-large | `xxl` | `extra-extra-large` |
 
 ## 省略表記できないものの例
+
+### 位置
+
+| 位置 | 推奨略称（正しい） | 使用不可の例（誤り） |
+|--------|--------------------|-----------------------|
+| top    | `top`    | `t` |
+| bottom | `bottom` | `b` |
+| left   | `left`   | `l` |
+| right  | `right`  | `r` |
 
 ### ウェイト
 
