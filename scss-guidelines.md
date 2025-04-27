@@ -387,8 +387,8 @@
 
   // --- Size/Box Model ---
   width: 100%;
-  padding: 16px;
   margin: 0 auto;
+  padding: 16px;
 
   // --- Border/Background/Shadow ---
   border: 1px solid #ccc;
