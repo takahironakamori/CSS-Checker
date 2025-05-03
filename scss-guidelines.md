@@ -145,6 +145,7 @@
 - modifier は、以下に明記されたもののみ使用することができます。
 - modifier は、必ず "--" で始まります。
 - modifier は必ず別のクラスとして使用します（半角スペースで区切ってください）。
+- modifier のスタイルは、それぞれのコンポーネントで定義します。
 - 同時に複数の modifier を使用することができます。
 
 #### 選択されている状態
@@ -237,8 +238,14 @@
   │   ├── designToken           ... Design Token別の scss（Theme に該当する部分）。
   │   │   ├── designToken.scss  ... Primitive Component が読み込むファイル。Design Token内の scss を束ねる。
   │   │   ├── border.scss       ... ボーターに関する定義。
-  │   │   ├── color.scss        ... 色 に関する定義。
-  │   │   └── typography.scss   ... 文字 に関する定義。
+  │   │   ├── color.scss        ... 色に関する定義。
+  │   │   ├── icon.scss         ... アイコンに関する定義。
+  │   │   ├── layout.scss       ... レイアウトに関する定義。
+  │   │   ├── space.scss        ... スペースに関する定義。
+  │   │   ├── transition.scss   ... アニメーションに関する定義。
+  │   │   ├── typography.scss   ... テキストに関する定義。
+  │   │   ├── utility.scss      ... utility を定義。
+  │   │   └── common.scss       ... 上記の scss ファイルに含まれてないものをまとめて定義する。
   │   ├── primitive             ... Primitive Component別の scss。
   │   │   └── [component_name].scss ... Primitive Component の scss（例:paragraph）。
   │   ├── semantic              ... Semantic Component別の scss。
@@ -374,36 +381,36 @@
 ### 例
 ```css
 * {
-  // --- Layout ---
+  // Layout
   display: flex;
   position: relative;
   top: 0;
   left: 0;
   z-index: 1;
 
-  // --- Flex/Grid ---
+  // Flex/Grid
   justify-content: center;
   align-items: center;
 
-  // --- Size/Box Model ---
+  // Size/Box Model
   width: 100%;
   margin: 0 auto;
   padding: 16px;
 
-  // --- Border/Background/Shadow ---
+  // Border/Background/Shadow
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
-  // --- Typography ---
+  // Typography
   font-size: 1rem;
   font-weight: bold;
   line-height: 1.0;
   color: #333;
   text-align: center;
 
-  // --- Visual Effects ---
+  // Visual Effects
   opacity: 1;
   transform: translateY(0);
   transition: all 0.3s ease;
@@ -434,6 +441,14 @@
 | large             | `l`   | `large`             |
 | extra-large       | `xl`  | `extra-large`       |
 | extra-extra-large | `xxl` | `extra-extra-large` |
+
+
+### htmlの仕様で省略されているもの
+
+| サイズ | 推奨略称（正しい） | 使用不可の例（誤り） |
+|--------|--------------------|-----------------------|
+| column | `col` | `column` |
+
 
 ## 省略表記できないものの例
 
